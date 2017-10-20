@@ -140,3 +140,19 @@ th {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+blink {
+  animation: 2s ease infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
