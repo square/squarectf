@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <title>Square CTF 2017: Perlfuscated</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.squarectf.com/favicon.ico">
+  <meta name="og:title" content="Square CTF: hacking competition!">
+  <meta name="og:url" content="https://squarectf.com/">
+  <meta property="og:type" content="website">
+  <meta name="og:description" content="Compete to solve security-related challenges.">
+  <meta property="og:image" content="https://cdn.squarectf.com/og.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@SquareEng">
+  <meta name="twitter:title" content="Square CTF: hacking competition!">
+  <meta name="twitter:description" content="Compete to solve security-related challenges.">
+  <meta name="twitter:image" content="https://cdn.squarectf.com/og.png">
+
+  <meta name="description" content="Compete to solve security-related challenges.">
+  <meta name="author" content="Square, Inc.">
+  <link rel="stylesheet" media="screen" href="../squarectf.css">
+</head>
+<body>
+<div id="logo">
+  <div><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span></div>
+  <div><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span></div>
+  <div><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span class="p"></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span class="p"></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+
+<div>2017: <a class="ns" href="../2017/results.html">results</a> | <a class="s" href="../2017/challenges.html">challenges</a> | <a class="ns" href="../2017/write_ups.html">write ups</a></div>
+
+<div class="challenge content">
+  <div class="title">
+    <div>
+      <h3>Perlfuscated</h3>
+      <p>De-obfuscate some code.</p>
+    </div>
+    <div>
+      <p>500 points</p>
+      <p>Reverse</p>
+    </div>
+  </div>
+
+  <p>
+    Our hamster allies took a break from racing on their wheels to scan Evil Corp’s websites with equal speed. They
+    found this <a href="https://perlfuscated.capturethesquare.com/cgi-bin/perlfuscated.pl?...">Perl script</a>
+    suspicious. Of course, hamsters find everything suspicious, so maybe it’s nothing…
+  </p>
+
+  <!-- TODO: link to docker image -->
+
+</div>
+
+<div class="spacer"></div>
+
+<footer>
+  <span>Copyright <img style="height: 20px" src="https://cdn.squarectf.com/square.png" valign="middle"> <a href="https://www.squareup.com/careers">Square, Inc.</a> 2017 </span>
+</footer>
+
+</body>
+</html>

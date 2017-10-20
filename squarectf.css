@@ -7,6 +7,7 @@ body {
   align-content: flex-end;
   align-items: center;
   word-wrap: break-word;
+  line-height: 1.5em;
 }
 
 #logo {
@@ -60,12 +61,9 @@ h2 {
   padding-top: 20px;
 }
 
-pre {
-  line-height: 0.8em;
-}
-
 a {
   color: #007f00;
+  transition: color 0.5s ease;
   text-decoration: underline;
 }
 
@@ -81,6 +79,7 @@ a.s {
   text-decoration: none;
   color: #222;
   background-color: #007f00;
+  transition: background-color 0.5s ease;
   padding: 0 5px;
 }
 
