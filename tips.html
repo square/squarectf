@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Square CTF: hacking competition!</title>
+  <title>Square CTF: Tips for Getting Started</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,20 +44,62 @@
 
   <div class="content">
 
-    <h1>Info</h1>
-    <p>We will run our next CTF in 2018. Specific dates TBD. Contact us if you would like to contribute challenges!</p>
+    <h1>Tips for Getting Started</h1>
 
-    <h1>New to CTFs?</h1>
-    <p>We have a <a href="tips.html">list of tips</a> that should help people who are new to CTFs get started.</p>
-
-    <h1>Archives</h1>
+    <div>Work environment</div>
     <ul>
-      <li>2014: Square co-organized <a href="https://microcorruption.com/">microcorruption.com</a>.</li>
-      <li>2017: <a href="2017/results.html">results</a> | <a href="2017/challenges.html">challenges</a> | <a href="2017/write_ups.html">write ups</a>.</li>
+      <li>Some challenges are going to require and/or be easier to solve with Linux. If you don’t have a native Linux install, you can either use a Liveusb or a virtualizer (e.g. <a href="https://www.virtualbox.org/wiki/VirtualBox">VirtualBox</a>). You can use Ubuntu or any other distribution</li>
+      <li>You can save some time by pre-installing common programming languages, such as <a href="https://linux.die.net/man/1/gcc">gcc</a> (or <a href="http://releases.llvm.org/download.html">llvm</a>), <a href="https://golang.org/dl/">golang</a>, <a href="https://www.perl.org/get.html">perl</a>, <a href="https://www.ruby-lang.org/en/downloads/">ruby</a>, <a href="https://www.python.org/downloads/">python</a></li>
+      <li><a href="https://github.com/wuntee/vagrant-ctf">Vagrant-CTF</a> is a VM filled with useful tools</li>
     </ul>
 
-    <h1>Contact</h1>
-    ctf-help@squareup.com
+    <div>Common linux command line tools</div>
+      <ul>
+        <li><a href="https://curl.haxx.se/docs/manpage.html">curl</a> and <a href="https://www.gnu.org/software/wget/manual/wget.html">wget</a> let you download files and data </li>
+        <li><a href="https://linux.die.net/man/1/xxd">xxd</a> or <a href="http://man7.org/linux/man-pages/man1/od.1.html">od</a> let you convert files to hex and the other way around</li>
+        <li><a href="https://linux.die.net/man/1/file">file</a> and <a href="https://linux.die.net/man/1/strings">strings</a> let you get a sense of the type of the file</li>
+      </ul>
+
+    <div>Network</div>
+    <ul>
+      <li><a href="https://portswigger.net/burp">Burp</a>, <a href="https://sourceforge.net/projects/paros/">Paros</a>, <a href="https://www.charlesproxy.com/">Charles</a>, <a href="https://paw.cloud/">Paw</a> and <a href="https://www.getpostman.com/">Postman</a> let you proxy web traffic and intercept/modify it</li>
+      <li><a href="https://www.wireshark.org">WireShark</a> and <a href="http://www.secdev.org/projects/scapy/">scapy</a> let you inspect and record network packets</li>
+      <li><a href="http://www.networksorcery.com/enp/Protocol.htm">NetworkSorcery</a> has diagrams for many network protocols</li>
+      <li>Common protocols are specified as <a href="https://tools.ietf.org/rfc/index">RFCs</a></li>
+    </ul>
+
+    <div>Web tools and security</div>
+    <ul>
+      <li>Learn to use Chrome’s developer console (helps with debugging web apps, allows copying network requests as curl commands)</li>
+      <li><a href="https://www.amazon.com/Tangled-Web-Securing-Modern-Applications/dp/1593273886">The Tangled Web</a> and <a href="https://code.google.com/archive/p/browsersec/wikis/Main.wiki">Browser Security Handbook</a> are useful resources</li>
+      <li><a href="https://www.owasp.org/index.php/Main_Page">Owasp</a> maintains information on web vulnerabilities</li>
+    </ul>
+
+    <div>X86 assembly</div>
+    <ul>
+      <li><a href="https://linux.die.net/man/1/gdb">gdb</a> (debugger)</li>
+      <li><a href="https://linux.die.net/man/1/objdump">objdump</a> (disassembler)</li>
+      <li><a href="http://man7.org/linux/man-pages/man1/ldd.1.html">ldd</a> to view linked libraries</li>
+      <li><a href="https://github.com/pwndbg/pwndbg">pwndbg</a> a gdb plugin. Several other plugins (peda, gef) exist</li>
+      <li><a href="https://www.hex-rays.com/products/ida/">IDA pro</a>. The leading debugger for reverse engineering (~$500)</li>
+      <li><a href="https://defuse.ca/online-x86-assembler.htm">https://defuse.ca/online-x86-assembler.htm</a> online x86/x64 assembler and disassembler</li>
+      <li><a href="https://www.onlinedisassembler.com/odaweb/">https://www.onlinedisassembler.com/odaweb/</a> another online disassembler</li>
+      <li><a href="https://reverseengineering.stackexchange.com/questions/1817/is-there-any-disassembler-to-rival-ida-pro">A thorough list</a> of disassemblers. Some are free, others aren't</li>
+      <li><a href="http://syscalls.kernelgrok.com/">Linux syscalls</a></li>
+    </ul>
+
+    <div>Other resources</div>
+    <ul>
+      <li><a href="https://trailofbits.github.io/ctf/">https://trailofbits.github.io/ctf/</a></li>
+      <li><a href="http://resources.infosecinstitute.com/tools-of-trade-and-resources-to-prepare-in-a-hacker-ctf-competition-or-challenge/#gref">http://resources.infosecinstitute.com/tools-of-trade-and-resources-to-prepare-in-a-hacker-ctf-competition-or-challenge/#gref</a></li>
+      <li><a href="http://resources.infosecinstitute.com/what-a-challenger-perceives-in-most-of-the-ctf-categories-or-challenges/#gref">http://resources.infosecinstitute.com/what-a-challenger-perceives-in-most-of-the-ctf-categories-or-challenges/#gref</a></li>
+      <li><a href="https://www.endgame.com/blog/technical-blog/how-get-started-ctf">https://www.endgame.com/blog/technical-blog/how-get-started-ctf</a></li>
+      <li><a href="https://github.com/ctfs/resources">https://github.com/ctfs/resources</a></li>
+      <li><a href="https://github.com/sobolevn/awesome-cryptography">https://github.com/sobolevn/awesome-cryptography</a></li>
+      <li><a href="https://www.doyler.net/security-not-included/ctf-resources">https://www.doyler.net/security-not-included/ctf-resources</a></li>
+      <li><a href="http://phrack.org/issues/49/14.html">http://phrack.org/issues/49/14.html</a></li>
+      <li><a href="https://github.com/fdiskyou/Zines">https://github.com/fdiskyou/Zines</a></li>
+    </ul>
   </div>
 
   <div class="spacer"></div>
