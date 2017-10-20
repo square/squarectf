@@ -68,6 +68,15 @@ a {
   text-decoration: underline;
 }
 
+a[href*=http] {
+    padding-right: 13px;
+    background: center right no-repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QoUCAwxd3+kYAAAAGhJREFUGNOFj90NwCAIhA/jRu6EM+lMdabrQ0XxJ+kRQiBfDhCS8JIs68DmHpTaId2oDATfUyloAOrpGK+r0gl+jqWnrU3A7hz9HVeoekdzaivEQplVwREPOHoFScIyHE8UXBXHfT96AXoqM2PdWVmeAAAAAElFTkSuQmCC")
+}
+
+.nobg {
+  background: inherit !important;
+}
+
 footer {
    text-align: center;
    width: 100%;
