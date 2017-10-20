@@ -68,13 +68,9 @@ a {
   text-decoration: underline;
 }
 
-a[href*=http] {
+.writeups a[href*=http] {
     padding-right: 13px;
     background: center right no-repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QoUCAwxd3+kYAAAAGhJREFUGNOFj90NwCAIhA/jRu6EM+lMdabrQ0XxJ+kRQiBfDhCS8JIs68DmHpTaId2oDATfUyloAOrpGK+r0gl+jqWnrU3A7hz9HVeoekdzaivEQplVwREPOHoFScIyHE8UXBXHfT96AXoqM2PdWVmeAAAAAElFTkSuQmCC")
-}
-
-.nobg {
-  background: inherit !important;
 }
 
 footer {
@@ -83,4 +79,25 @@ footer {
    padding-top: 7px;
    margin-top: 20px;
    border-top: 1px solid #000;
+}
+
+th {
+  text-align: left;
+}
+
+.challenges td {
+  padding: 10px;
+}
+
+.challenges th {
+  padding-left: 10px;
+  font-weight: normal;
+}
+
+.challenges tbody tr:nth-of-type(odd) {
+  background-color: #111
+}
+
+.challenges tbody tr:nth-of-type(even) {
+  background-color: #333
 }
