@@ -62,10 +62,16 @@ body {
 
 h1 {
   padding-top: 20px;
+  font-weight: normal;
 }
 
 h2 {
   padding-top: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 a {
