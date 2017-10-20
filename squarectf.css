@@ -156,3 +156,8 @@ blink {
         opacity: 0;
     }
 }
+
+code {
+  padding-left: 10px;
+  border-left: 4px solid #007f00;
+}
