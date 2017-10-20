@@ -58,10 +58,10 @@
     <p>"Not secure? Huh? You don’t believe me? I’ll show you how secure. <a href="https://cdn.squarectf.com/challenges/little_doggy_tables.rb">Here’s the source!</a>"</p>
 
     <h3>Usage example:</h3>
-    <p>curl "https://<i>hostname</i>/agent_lookup" --get --data-urlencode "codename=Fido"</p>
-
-    <!-- TODO: link to docker image -->
-
+    <code>
+      docker run --rm -p 8080:8080 squarectf/fido<br>
+      curl "http://localhost:8080/agent_lookup" --get --data-urlencode "codename=Fido"
+    </code>
   </div>
 
   <div class="spacer"></div>
