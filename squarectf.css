@@ -127,11 +127,11 @@ th {
 }
 
 .challenges tbody tr:nth-of-type(odd) {
-  background-color: #444
+  background-color: #3d3d3d
 }
 
 .challenges tbody tr:nth-of-type(even) {
-  background-color: #333
+  background-color: #353535
 }
 
 .challenge .title {
