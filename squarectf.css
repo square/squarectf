@@ -65,6 +65,14 @@ pre {
 
 a {
   color: #007f00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.s {
   text-decoration: underline;
 }
 
