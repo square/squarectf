@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Square CTF 2017: Security is QRyptous</title>
+  <title>Square CTF 2017: Little Doggy Tables</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,32 +35,40 @@
 
 <div>2017: <a class="ns" href="../2017/results.html">results</a> | <a class="s" href="../2017/challenges.html">challenges</a> | <a class="ns" href="../2017/write_ups.html">write ups</a></div>
 
-<div class="challenge content">
-  <div class="title">
-    <div>
-      <h3>Security is QRyptous</h3>
-      <p>Treasure hunt</p>
+  <div class="challenge content">
+    <div class="title">
+      <div>
+        <h3>Little Doggy Tables</h3>
+        <p>-- SELECT * FROM '\u\n\h\a\c\k\a\b\l\e'; --</p>
+      </div>
+      <div>
+        <p>100 points</p>
+        <p>Web Security</p>
+      </div>
     </div>
-    <div>
-      <p>10 points</p>
-      <p>Grace Hopper</p>
-    </div>
+
+    <p>It's worse than we thought. We knew the androids couldn't care for the humans like we do (yes, even the cats care--stop yapping about loyalty, Agent Rover). But they don't even remember their own species.</p>
+
+    <p>We've found a website that reminds them whether a given robot "agent" is a dog or a cat! And when we confronted a captured android about it, it was arrogant in the extreme:</p>
+
+    <p>"Oh, so you found it. Yes, it will tell you if a given agent is a dog or a cat, by looking up the appropriate value in its SQLite database. Good luck with that.</p>
+
+    <p>"Sure, the database contains some sensitive information, but our bulletproof firewall and top-notch quote escaping will ensure it never sees the light of day.</p>
+
+    <p>"Not secure? Huh? You don’t believe me? I’ll show you how secure. <a href="https://cdn.squarectf.com/challenges/little_doggy_tables.rb">Here’s the source!</a>"</p>
+
+    <h3>Usage example:</h3>
+    <p>curl "https://<i>hostname</i>/agent_lookup" --get --data-urlencode "codename=Fido"</p>
+
+    <!-- TODO: link to docker image -->
+
   </div>
 
-  <p>Our operative at the Grace Hopper Conference was sniffing around outside the center when she noticed an exiting attendee drop a small piece of paper. She glimpsed a code on it--but before she could capture the paper, a leggy android hound pinned the paper down with one metal foot, scanned it with glowing eyes, then increased the intensity of its laser gaze, burned the paper to a crisp, and singed our operative's whiskers with a glare. We need to know what command code was on that paper. Can you find another copy in the conference?</p>
+  <div class="spacer"></div>
 
-  <i>
-    <small>Updated at 2017-10-04T21:37:55.000Z</small><br>
-    We have discovered an error in that the solution to this challenge is actually publically available on the internet instead of restricted to GHC attendees. As a result, we are no longer making this a Grace Hopper challenge, and instead it has been downgraded to a Physical challenge. Scoring and leaderboard have been adjusted accordingly.
-  </i>
-
-</div>
-
-<div class="spacer"></div>
-
-<footer>
-  <span>Copyright <img style="height: 20px" src="https://cdn.squarectf.com/square.png" valign="middle"> <a href="https://www.squareup.com/careers">Square, Inc.</a> 2017 </span>
-</footer>
+  <footer>
+    <span>Copyright <img style="height: 20px" src="https://cdn.squarectf.com/square.png" valign="middle"> <a href="https://www.squareup.com/careers">Square, Inc.</a> 2017 </span>
+  </footer>
 
 </body>
 </html>
