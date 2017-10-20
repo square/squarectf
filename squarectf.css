@@ -6,6 +6,7 @@ body {
   font-family: monospace;
   align-content: flex-end;
   align-items: center;
+  word-wrap: break-word;
 }
 
 #logo {
