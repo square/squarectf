@@ -8,6 +8,7 @@ body {
   align-items: center;
   word-wrap: break-word;
   line-height: 1.5em;
+  letter-spacing: 0.5px;
 }
 
 #logo {
@@ -27,6 +28,12 @@ body {
 #logo span {
   display: inline-block;
   flex-grow: 1;
+}
+
+#logo span:hover {
+  display: inline-block;
+  flex-grow: 1;
+  background-color: #007f00;
 }
 
 #logo .p {
