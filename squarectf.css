@@ -134,6 +134,12 @@ th {
   background-color: #30332E;
 }
 
+.challenges img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .challenge .title {
   display: flex;
   flex-direction: row;
