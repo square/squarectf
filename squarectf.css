@@ -89,6 +89,7 @@ a {
   color: #007f00;
   transition: color 0.5s ease;
   text-decoration: underline;
+  text-decoration-skip: ink;
 }
 
 a:hover {
