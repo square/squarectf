@@ -128,13 +128,18 @@ th {
   text-align: left;
 }
 
-.challenges td {
-  padding: 10px;
+table {
+  width: 100%;
 }
 
 .challenges th {
   padding: 0 10px;
   font-weight: normal;
+}
+
+.challenges td {
+  padding: 10px;
+  word-break: break-all;
 }
 
 .challenges tbody tr:nth-of-type(odd) {
