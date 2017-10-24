@@ -11,6 +11,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+ul {
+  padding-left: 1.25em;
+}
+
 #logo_outer {
   position: relative;
   width: 100%;
