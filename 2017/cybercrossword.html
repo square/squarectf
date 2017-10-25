@@ -1,0 +1,231 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <style>
+  @font-face {
+    font-family: 'CMU Serif';
+    src: url('https://squarectf.com/2017/cmunrm.ttf');
+  }
+  @font-face {
+    font-family: 'CMU Serif';
+    src: url('https://squarectf.com/2017/cmunbx.ttf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'CMU Serif';
+    src: url('https://squarectf.com/2017/cmunti.ttf');
+    font-style: italic;
+  }
+  body {
+    font-family: "CMU Serif", serif
+  }
+  h1 {
+    margin-bottom: 0em;
+    margin-top: 1em;
+  }
+  div {
+    clear: both;
+  }
+  .clues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 10pt;
+    width: 1316px;
+  }
+  .vertical_line {
+    border-left: 1px solid black;
+    width: 10px;
+    margin-top: 3em;
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+  .grid {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .cell {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .cell input {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    font-family: "CMU Serif";
+    font-size: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .notempty {
+    background-color: #fff;
+    border: 1px solid black;
+    margin: -1px -1px 0px 0px;
+  }
+  .hex {
+    vertical-align: top;
+    align-self: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    font-size: 8pt;
+  }
+  .empty {
+    padding-left: 1px;
+    padding-top: 1px;
+  }
+  p {
+    font-size: 4pt;
+    text-align: center;
+  }
+  .web {
+    text-align: center;
+  }
+  .print {
+    text-align: center;
+    display: none;
+  }
+  @media print {
+    .print {
+      display: block !important;
+    }
+    .web {
+      display: none !important;
+    }
+  }
+  a {
+    color: black;
+  }
+  </style>
+</head>
+<body>
+<h1>Cyber Crossword</h1>
+<script src="https://squarectf.com/2017/cybercrossword.js"></script>
+<div id="flag"></div>
+<div class="clues">
+  <div>
+    <h1>Across</h1>
+    <div><label for="1">1. Packet microscope.</label></div>
+    <div><label for="5">5. See 49 down.</label></div>
+    <div><label for="7">7. Movie, 1980s.</label></div>
+    <div><label for="9">9. 0x90 0x90 0x90…</label></div>
+    <div><label for="a">a. Configures firewall.</label></div>
+    <div><label for="d">d. Linux network hook.</label></div>
+    <div><label for="f">f. Stateful firewall (abbr).</label></div>
+    <div><label for="13">13. See 49 down.</label></div>
+    <div><label for="14">14. Secure remote login (abbr).</label></div>
+    <div><label for="16">16. Wireless protocol.</label></div>
+    <div><label for="18">18. Kevin's art.</label></div>
+    <div><label for="1a">1a. OCaml dialect.</label></div>
+    <div><label for="1b">1b. _____ Computer Club.</label></div>
+    <div><label for="1c">1c. Bug discovery technique.</label></div>
+    <div><label for="1f">1f. Write once, read never.</label></div>
+    <div><label for="20">20. Movie, 1980s.</label></div>
+    <div><label for="21">21. Type of flaw.</label></div>
+    <div><label for="23">23. Bit of derring-do.</label></div>
+    <div><label for="25">25. Hunter2.</label></div>
+    <div><label for="27">27. Swap cyber keys.</label></div>
+    <div><label for="28">28. Remaps addresses (abbr).</label></div>
+    <div><label for="29">29. Send ______ your resume!</label></div>
+  </div>
+  <div>
+    <h1>&nbsp;</h1>
+    <div><label for="2a">2a. Friends with 2b down.</label></div>
+    <div><label for="2b">2b. Hocus-pocus.</label></div>
+    <div><label for="2e">2e. CVE-2014-1266.</label></div>
+    <div><label for="30">30. Pet name. Also an alliance (abbr).</label></div>
+    <div><label for="31">31. Co-discovered the tickle attack (first name).</label></div>
+    <div><label for="33">33. Greek dog. Also a protocol.</label></div>
+    <div><label for="36">36. Crypto agreement.</label></div>
+    <div><label for="38">38. Device providing crypto.</label></div>
+    <div><label for="3a">3a. Drinking age in Italy.</label></div>
+    <div><label for="3c">3c. Hot barrier.</label></div>
+    <div><label for="40">40. Stateful firewall.</label></div>
+    <div><label for="41">41. A correct way to handle passwords.</label></div>
+    <div><label for="44">44. <i>y</i>&sup2; = <i>x</i>&sup3; + <i>ax</i> + <i>b</i>.</label></div>
+    <div><label for="46">46. Atbash of 2e across.</label></div>
+    <div><label for="47">47. Conference.</label></div>
+    <div><label for="48">48. Magazine.</label></div>
+    <div><label for="4a">4a. Perfect crypto.</label></div>
+    <div><label for="4b">4b. Series of anonymous tubes.</label></div>
+    <div><label for="4c">4c. Target of Stuxnet (abbr).</label></div>
+    <div><label for="4d">4d. "Hello, I have recently come into a large fortune…"</label></div>
+  </div>
+  <div class="vertical_line"></div>
+  <div>
+    <h1>Down</h1>
+    <div><label for="0">0. Early computer worm.</label></div>
+    <div><label for="2">2. Web vulnerability.</label></div>
+    <div><label for="3">3. Windows forerunner (abbr).</label></div>
+    <div><label for="4">4. 2600.</label></div>
+    <div><label for="5">5. Build backwards (abbr).</label></div>
+    <div><label for="6">6. Security theater (abbr).</label></div>
+    <div><label for="8">8. Former version of e down (abbr).</label></div>
+    <div><label for="b">b. Crypto tender.</label></div>
+    <div><label for="c">c. &nbsp; ... --- ...</label></div>
+    <div><label for="d">d. Group of people who break crypto (abbr).</label></div>
+    <div><label for="e">e. Secures your browsing (abbr).</label></div>
+    <div><label for="10">10. Type of jump.</label></div>
+    <div><label for="11">11. Once you are toast, thrice you are safe.</label></div>
+    <div><label for="12">12. Rot26 of 45 down.</label></div>
+    <div><label for="15">15. CVE-2014-0160.</label></div>
+    <div><label for="17">17. Tomorrow's operations.</label></div>
+    <div><label for="18">18. Little Bobby Tables.</label></div>
+    <div><label for="19">19. Netscape's crypto library (abbr).</label></div>
+    <div><label for="1a">1a. Bypasses non-executable memory (abbr).</label></div>
+    <div><label for="1d">1d. Required to not be a script kiddie.</label></div>
+    <div><label for="1e">1e. Greek present.</label></div>
+    <div><label for="21">21. Part 1: Someone nice. Part 2: poker prize.</label></div>
+  </div>
+  <div>
+    <h1>&nbsp;</h1>
+    <div><label for="22">22. WWII crypto.</label></div>
+    <div><label for="24">24. Fake login website.</label></div>
+    <div><label for="26">26. Securest operating system.</label></div>
+    <div><label for="2a">2a. Type of flaw.</label></div>
+    <div><label for="2b">2b. Friends with 2a across.</label></div>
+    <div><label for="2c">2c. Intel's latest security feature (abbr).</label></div>
+    <div><label for="2d">2d. Movie, 1990s.</label></div>
+    <div><label for="2f">2f. Rot13 of 33 across.</label></div>
+    <div><label for="32">32. Pretty good _______.</label></div>
+    <div><label for="34">34. Eavedrops on 2a across and 2b down.</label></div>
+    <div><label for="35">35. CVE-2014-6271.</label></div>
+    <div><label for="37">37. Part 1: &nbsp; -- --- .-. ... . (archaic). Part 2: - ..- ... -.-</label></div>
+    <div><label for="39">39. Source of protein. Also trust model (abbr).</label></div>
+    <div><label for="3b">3b. Type of cipher.</label></div>
+    <div><label for="3d">3d. Atbash of 23 across.</label></div>
+    <div><label for="3e">3e. Config system.</label></div>
+    <div><label for="3f">3f. Movie, 1990s.</label></div>
+    <div><label for="40">40. Network boot (abbr).</label></div>
+    <div><label for="42">42. Spying using signal leaks.</label></div>
+    <div><label for="43">43. Author of this challenge (first name).</label></div>
+    <div><label for="45">45. Rot26 of 12 down.</label></div>
+    <div><label for="49">49. Group of people who build crypto (abbr).</label></div>
+  </div>
+</div>
+<div class="clues">
+  <div style="width: 100%">
+    <h1></h1>
+    <div class="web">This challenge is also available at <a href="https://squarectf.com/2017/cybercrossword.pdf">https://squarectf.com/2017/cybercrossword.pdf</a></div>
+    <div class="print">This challenge is also available at https://squarectf.com/2017/cybercrossword.html</div>
+    <p>
+      Disclaimer: this challenge is not intended to convey or constitute cryptographic advice. Always consult a
+      cryptologist, then roll your own crypto. Author is not responsible for presence or absence of mistakes and eyesores.
+      This disclaimer is subject to change without notice!
+    </p>
+  </div>
+</div>
+</body>
+</html>
