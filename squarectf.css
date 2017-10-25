@@ -9,6 +9,9 @@ body {
   word-wrap: break-word;
   line-height: 1.5em;
   letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 ul {
@@ -166,6 +169,8 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #3E4E50;
+  padding: 1em;
 }
 
 blink {
