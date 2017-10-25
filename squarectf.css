@@ -71,7 +71,7 @@ ul {
   }
   .content {
     margin: 0 10px;
-    width: auto;
+    width: 100%;
   }
 }
 
