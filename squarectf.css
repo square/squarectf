@@ -9,9 +9,12 @@ body {
   word-wrap: break-word;
   line-height: 1.5em;
   letter-spacing: 0.5px;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 0 10px;
   height: 100%;
+  width: 100%;
+  max-width: 820px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -59,23 +62,13 @@ ul {
 }
 
 .content {
-  width: 800px;
+  width: 100%;
   padding-top: 20px;
 }
 
 .spacer {
   align-self: stretch;
   margin: auto;
-}
-
-@media screen and ( max-width: 820px ){
-  pre {
-    font-size: 10px;
-  }
-  .content {
-    margin: 0 10px;
-    width: 100%;
-  }
 }
 
 h1 {
