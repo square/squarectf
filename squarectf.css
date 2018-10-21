@@ -191,3 +191,9 @@ code {
   padding-left: 10px;
   border-left: 4px solid #007f00;
 }
+
+.inv {
+  background-color: green;
+  color: black;
+  text-shadow: none;
+}
