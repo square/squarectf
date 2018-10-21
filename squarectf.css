@@ -193,7 +193,7 @@ code {
 }
 
 .inv {
-  background-color: green;
-  color: black;
+  color: #222;
+  background-color: #007f00;
   text-shadow: none;
 }
