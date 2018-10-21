@@ -76,19 +76,22 @@ ul {
 h1 {
   padding-top: 20px;
   font-weight: normal;
+  color: #0f0;
 }
 
 h2 {
   padding-top: 20px;
   font-weight: normal;
+  color: #0f0;
 }
 
 h3 {
   font-weight: normal;
+  color: #0f0;
 }
 
 a {
-  color: #007f00;
+  color: #00fb00;
   transition: color 0.5s ease;
   text-decoration: underline;
   text-decoration-skip: ink;
@@ -96,7 +99,7 @@ a {
 }
 
 a:hover {
-  color: #00ff00;
+  color: #0c0;
 }
 
 a.ns {
@@ -106,13 +109,13 @@ a.ns {
 a.s {
   text-decoration: none;
   color: #222;
-  background-color: #007f00;
+  background-color: #00fb00;
   transition: background-color 0.5s ease;
   padding: 0 5px;
 }
 
 a.s:hover {
-  background-color: #00ff00;
+  background-color: #0c0;
 }
 
 .writeups a[href*=http] {
