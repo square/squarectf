@@ -197,3 +197,11 @@ code {
   background-color: #007f00;
   text-shadow: none;
 }
+
+.credits {
+  font-size: 1px;
+  border: 0px;
+  margin: 0px;
+  text-shadow: none;
+  line-height: 2px;
+}
