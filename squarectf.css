@@ -6,7 +6,7 @@ body {
 		width: 78ch;
 }
 
-h1, h2 {
+h1, h2, h3 {
 		display: unset;
     font-size: unset;
     margin-block-start: unset;

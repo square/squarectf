@@ -1,46 +1,37 @@
 <html lang="en">
-<head>
-  <title>Square CTF: 2017 write ups</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>Square CTF: 2017 write ups</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <meta name="og:title" content="Square CTF: hacking competition!">
-  <meta name="og:url" content="https://squarectf.com/">
-  <meta property="og:type" content="website">
-  <meta name="og:description" content="Compete to solve security-related challenges.">
-  <meta property="og:image" content="/og.png">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="og:title" content="Square CTF: hacking competition!">
+		<meta name="og:url" content="https://squarectf.com/">
+		<meta property="og:type" content="website">
+		<meta name="og:description" content="Compete to solve security-related challenges.">
+		<meta property="og:image" content="/og.png">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@SquareEng">
-  <meta name="twitter:title" content="Square CTF: hacking competition!">
-  <meta name="twitter:description" content="Compete to solve security-related challenges.">
-  <meta name="twitter:image" content="/og.png">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@SquareEng">
+		<meta name="twitter:title" content="Square CTF: hacking competition!">
+		<meta name="twitter:description" content="Compete to solve security-related challenges.">
+		<meta name="twitter:image" content="/og.png">
 
-  <meta name="description" content="Compete to solve security-related challenges.">
-  <meta name="author" content="Square, Inc.">
-  <link rel="stylesheet" media="screen" href="../squarectf.css">
-</head>
-<body>
-  <div class="content">
+		<meta name="description" content="Compete to solve security-related challenges.">
+		<meta name="author" content="Square, Inc.">
+		<link rel="stylesheet" media="screen" href="../squarectf.css">
+	</head>
+	<body>
+		<div class="wideline begin">
+			<span>SQUARE_CTF_WRITEUPS(1)</span>
+			<span><a href="https://squarectf.com/2017">Square CTF 2017</a> - Write Ups</span>
+			<span>SQUARE_CTF_WRITEUPS(1)</span>
+		</div>
 
-    <div id="logo_outer">
-      <a href="https://squarectf.com/" id="logo">
-        <div><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 5"></span><span class="p" style="flex-grow: 2"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 2"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 5"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 5"></span><span style="flex-grow: 10"></span><span class="p" style="flex-grow: 3"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 5"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 6"></span><span style="flex-grow: 2"></span></div>
-        <div><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 13"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span></div>
-        <div><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 12"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 9"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span></div>
-        <div><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 6"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 5"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 9"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 9"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 4"></span></div>
-        <div><span style="flex-grow: 7"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 1"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 12"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 9"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span></div>
-        <div><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 13"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span></div>
-        <div><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 5"></span><span class="p" style="flex-grow: 2"></span><span style="flex-grow: 1"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 4"></span><span style="flex-grow: 3"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 2"></span><span class="p" style="flex-grow: 5"></span><span style="flex-grow: 10"></span><span class="p" style="flex-grow: 3"></span><span style="flex-grow: 5"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 4"></span><span class="p" style="flex-grow: 1"></span><span style="flex-grow: 7"></span></div>
-    </a></div>
-
-    <div class="nav">2017: <a class="ns" href="../2017/results.html">results</a> | <a class="ns" href="../2017/index.html">challenges</a> | <a class="s" href="../2017/write_ups.html">write ups</a></div>
-
-    <h1>2017 Write ups</h1>
-    <p>The following write ups were shared by participants.</p>
-    <p><blink>Spoiler alert!</blink></p>
+    <h1>Name</h1>
+    <p>write-ups-2017 - The following write ups were shared by participants.</p>
+    <p>Spoiler alert!</p>
 
     <div class="writeups">
       <div><h2>Book of Allies</h2>
@@ -53,140 +44,137 @@
         <ul><li>n/a</li></ul></div>
 
       <div><h2>Stegasaurus</h2>
-      <ul>
-        <li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Stegasaurus-10.md">DC416</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#Stegasaurus">TH</a></li>
+				<ul>
+					<li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Stegasaurus-10.md">DC416</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#Stegasaurus">TH</a></li>
       </ul></div>
 
       <div><h2>🍎🍌🍍</h2>
-      <ul>
-        <li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#10-apple-banana-pineapple-image-processing">noraj</a></li>
+				<ul>
+					<li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#10-apple-banana-pineapple-image-processing">noraj</a></li>
       </ul></div>
 
       <div><h2>Bytes</h2>
         <i>note: Bytes is the same as 6yte, except you can use more bytes.</i>
         <ul>
-          <i>by</i> <a href="https://blog.carlospacho.com/2017/10/15/squarectf-writeup-bytes/">Carlos</a></li>
-        </ul></div>
+          <li><i>by</i> <a href="https://blog.carlospacho.com/2017/10/15/squarectf-writeup-bytes/">Carlos</a></li>
+				</ul>
 
-      <div><h2>Password checker</h2>
-      <ul>
-        <li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/PasswordChecker-50.md">DC416</a></li>
-        <li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#passwordchecker">Martin</a></li>
-        <li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-password-checker-web-security">noraj</a></li>
-      </ul></div>
+			</div>
 
-      <div><h2>The General's Cat</h2>
-      <ul>
-        <li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-the-general-s-cat-crypto">noraj</a></li>
-      </ul></div>
+			<div><h2>Password checker</h2>
+				<ul>
+					<li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/PasswordChecker-50.md">DC416</a></li>
+					<li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#passwordchecker">Martin</a></li>
+					<li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-password-checker-web-security">noraj</a></li>
+			</ul></div>
 
-      <div><h2>The Robot's Grandmother</h2>
-      <ul>
-        <li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/The-Robots-Grandmother-50.md">DC416</a></li>
-        <li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-the-robot-s-grandmother-forensics">noraj</a></li>
-      </ul></div>
+			<div><h2>The General's Cat</h2>
+				<ul>
+					<li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-the-general-s-cat-crypto">noraj</a></li>
+			</ul></div>
 
-      <div><h2>Ciphercel</h2>
-      <ul>
-        <li><i>by</i> <a href="https://tylerkerr.ca/b/2017/10/square-ctf-2017-ciphercel">tk</a></li>
-      </ul></div>
+			<div><h2>The Robot's Grandmother</h2>
+				<ul>
+					<li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/The-Robots-Grandmother-50.md">DC416</a></li>
+					<li><i>by</i> <a href="https://rawsec.ml/en/SquareCTF-2017-write-ups/#50-the-robot-s-grandmother-forensics">noraj</a></li>
+			</ul></div>
 
-      <div><h2>Little Doggy Tables</h2>
-      <ul>
-        <li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Little-Doggy-Tales-100.md">DC416</a></li>
-        <li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#littledoggytables">Martin</a></li>
-      </ul></div>
+			<div><h2>Ciphercel</h2>
+				<ul>
+					<li><i>by</i> <a href="https://tylerkerr.ca/b/2017/10/square-ctf-2017-ciphercel">tk</a></li>
+			</ul></div>
 
-      <div><h2>Reading between the lines</h2>
-      <ul>
-        <li><i>by</i> <a href="https://pequalsnp-team.github.io/writeups/reading_between_the_lines">thezero</a></li>
-      </ul></div>
+			<div><h2>Little Doggy Tables</h2>
+				<ul>
+					<li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Little-Doggy-Tales-100.md">DC416</a></li>
+					<li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#littledoggytables">Martin</a></li>
+			</ul></div>
 
-      <div><h2>Sniffed Off the Wire</h2>
-      <ul>
-        <li><i>by</i> <a href="http://duksctf.github.io/SquareCTF2017-Sniffed-Off-the-Wire/">duksctf</a></li>
-        <li><i>by</i> <a href="https://teamrocketist.github.io/2017/10/16/Forensics-Square-CTF-Sniffed-Off-the-Wire/">TeamRocketIST</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#Sniffed_off_the_wire">TH</a></li>
-        <li><i>by</i> <a href="https://tylerkerr.ca/b/2017/10/square-ctf-2017-sniffed-off-the-wire">tk</a></li>
-        <li><i>by</i> <a href="https://github.com/minervainooo/Writeup/blob/master/Sniffed%20Off%20the%20Wire.md">minervainooo</a></li>
-      </ul></div>
+			<div><h2>Reading between the lines</h2>
+				<ul>
+					<li><i>by</i> <a href="https://pequalsnp-team.github.io/writeups/reading_between_the_lines">thezero</a></li>
+			</ul></div>
 
-      <div><h2>SSS</h2>
-        <ul><li>n/a</li></ul></div>
+			<div><h2>Sniffed Off the Wire</h2>
+				<ul>
+					<li><i>by</i> <a href="http://duksctf.github.io/SquareCTF2017-Sniffed-Off-the-Wire/">duksctf</a></li>
+					<li><i>by</i> <a href="https://teamrocketist.github.io/2017/10/16/Forensics-Square-CTF-Sniffed-Off-the-Wire/">TeamRocketIST</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#Sniffed_off_the_wire">TH</a></li>
+					<li><i>by</i> <a href="https://tylerkerr.ca/b/2017/10/square-ctf-2017-sniffed-off-the-wire">tk</a></li>
+					<li><i>by</i> <a href="https://github.com/minervainooo/Writeup/blob/master/Sniffed%20Off%20the%20Wire.md">minervainooo</a></li>
+			</ul></div>
 
-      <div><h2>Cyber Crossword</h2>
-      <ul>
-        <li><i>by</i> <a href="cybercrossword_solution.pdf">Alok</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#Crossword">TH</a></li>
-      </ul></div>
+			<div><h2>SSS</h2>
+				<ul><li>n/a</li></ul></div>
 
-      <div><h2>Needle in the haystack</h2>
-      <ul>
-        <li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Needle-in-a-Haystack-500.md">DC416</a></li>
-        <li><i>by</i> <a href="http://john.freml.in/square-ctf-2017">John</a></li>
-        <li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#needleinthehaystack">Martin</a></li>
-      </ul></div>
+			<div><h2>Cyber Crossword</h2>
+				<ul>
+					<li><i>by</i> <a href="cybercrossword_solution.pdf">Alok</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#Crossword">TH</a></li>
+			</ul></div>
 
-      <div><h2>Perlfuscated</h2>
-      <ul>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#Perlfuscated">TH</a></li>
-      </ul></div>
+			<div><h2>Needle in the haystack</h2>
+				<ul>
+					<li><i>by</i> <a href="https://github.com/DC416/DC416-CTF-Team/blob/master/writeups/2017/SquareCTF/Needle-in-a-Haystack-500.md">DC416</a></li>
+					<li><i>by</i> <a href="http://john.freml.in/square-ctf-2017">John</a></li>
+					<li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#needleinthehaystack">Martin</a></li>
+			</ul></div>
 
-      <div><h2>The Turing Agent</h2>
-      <ul>
-        <li><i>by</i> <a href="https://blog.carlospacho.com/2017/10/08/squarectf-writeup-the-turing-agent/">Carlos</a></li>
-        <li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#theturingagentasmallgameboyctf">Martin</a></li>
-        <li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/reverse/gameboy">merrychap</a></li>
-        <li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#the-turing-agent">ntropy</a></li>
-        <li><i>by</i> <a href="https://teamrocketist.github.io/2017/10/16/Reverse-Square-CTF-The-Turing-Agent/">TeamRocketIST</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#The_Turing_Agent_-_a_small_Gameboy_CTF">TH</a></li>
-      </ul></div>
+			<div><h2>Perlfuscated</h2>
+				<ul>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#Perlfuscated">TH</a></li>
+			</ul></div>
 
-      <div><h2>6yte</h2>
-      <ul>
-        <li><i>by</i> <a href="https://ctftime.org/writeup/7776">babyr00t</a></li>
-        <li><i>by</i> <a href="https://medium.com/@c0ngwang/square-ctf-writeup-6yte-c3f02cbb919b">Cong</a></li>
-        <li><i>by</i> <a href="http://john.freml.in/square-ctf-2017">John</a></li>
-        <li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/pwn/6yte">merrychap</a></li>
-        <li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#6yte">ntropy</a></li>
-        <li><i>by</i> <a href="http://blog.s3kr.it/2017/10/14/squarectf-6yte/">s3krit</a></li>
-      </ul></div>
+			<div><h2>The Turing Agent</h2>
+				<ul>
+					<li><i>by</i> <a href="https://blog.carlospacho.com/2017/10/08/squarectf-writeup-the-turing-agent/">Carlos</a></li>
+					<li><i>by</i> <a href="https://martinmelhus.com/squarectf-2017-writeup/#theturingagentasmallgameboyctf">Martin</a></li>
+					<li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/reverse/gameboy">merrychap</a></li>
+					<li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#the-turing-agent">ntropy</a></li>
+					<li><i>by</i> <a href="https://teamrocketist.github.io/2017/10/16/Reverse-Square-CTF-The-Turing-Agent/">TeamRocketIST</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#The_Turing_Agent_-_a_small_Gameboy_CTF">TH</a></li>
+			</ul></div>
 
-      <div><h2>Floppy</h2>
-      <ul>
-        <li><i>by</i> <a href="http://www.actforit.com/wp/reverse/square-ctf-2017-floppy-web-1000-pts/">DODC</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#Floppy_-_x86_image">TH</a></li>
-        <li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/reverse/floppy">merrychap</a></li>
-        <li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#Floppy">ntropy</a></li>
-        <li><i>by</i> <a href="https://github.com/oh-iowned/ctf-writeups/blob/master/2017/square-ctf/floppy/README.md">zznop</a></li>
-      </ul></div>
+			<div><h2>6yte</h2>
+				<ul>
+					<li><i>by</i> <a href="https://ctftime.org/writeup/7776">babyr00t</a></li>
+					<li><i>by</i> <a href="https://medium.com/@c0ngwang/square-ctf-writeup-6yte-c3f02cbb919b">Cong</a></li>
+					<li><i>by</i> <a href="http://john.freml.in/square-ctf-2017">John</a></li>
+					<li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/pwn/6yte">merrychap</a></li>
+					<li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#6yte">ntropy</a></li>
+					<li><i>by</i> <a href="http://blog.s3kr.it/2017/10/14/squarectf-6yte/">s3krit</a></li>
+			</ul></div>
 
-      <div><h2>Seventeen</h2>
-      <ul>
-        <li><i>by</i> <a href="https://ctftime.org/writeup/7777">babyr00t</a></li>
-        <li><i>by</i> <a href="https://gist.github.com/DavidBuchanan314/5bb693803e8fbb4951b4569f76d12160">Retr0id</a></li>
-        <li><i>by</i> <a href="https://trmm.net/GHCCTF#17 ">TH</a></li>
-        <li><i>by</i> <a href="https://vishnudevtj.github.io/notes/squarectf-2017-seventeen">vishnudevtj</a></li>
-      </ul>
-      </div>
-    </div>
-  </div>
+			<div><h2>Floppy</h2>
+				<ul>
+					<li><i>by</i> <a href="http://www.actforit.com/wp/reverse/square-ctf-2017-floppy-web-1000-pts/">DODC</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#Floppy_-_x86_image">TH</a></li>
+					<li><i>by</i> <a href="https://github.com/VoidHack/write-ups/tree/master/Square%20CTF%202017/reverse/floppy">merrychap</a></li>
+					<li><i>by</i> <a href="https://ntropy-unc.github.io/jekyll/update/post/square/ctf/shellcoding/2017/10/14/Square-Writeup.html#Floppy">ntropy</a></li>
+					<li><i>by</i> <a href="https://github.com/oh-iowned/ctf-writeups/blob/master/2017/square-ctf/floppy/README.md">zznop</a></li>
+			</ul></div>
 
-  <div class="spacer"></div>
+			<div><h2>Seventeen</h2>
+				<ul>
+					<li><i>by</i> <a href="https://ctftime.org/writeup/7777">babyr00t</a></li>
+					<li><i>by</i> <a href="https://gist.github.com/DavidBuchanan314/5bb693803e8fbb4951b4569f76d12160">Retr0id</a></li>
+					<li><i>by</i> <a href="https://trmm.net/GHCCTF#17 ">TH</a></li>
+					<li><i>by</i> <a href="https://vishnudevtj.github.io/notes/squarectf-2017-seventeen">vishnudevtj</a></li>
+				</ul>
+			</div>
+		</div>
 
-  <footer>
-    <span>&copy; <script>document.write(new Date().getFullYear())</script> Square, Inc.</span>
-    <span>|</span>
-    <span><a href="https://squ.re/2POCGUK">Work at Square</a></span>
-    <span>|</span>
-    <span><a href="https://squareup.com/legal/privacy">Privacy Policy</a></span>
-    <span>|</span>
-    <span><a href="../code_of_conduct.html">Code of Conduct</a></span>
-    <span>|</span>
-    <span><a href="https://twitter.com/SquareCTF"><img src="../twitter_icon.svg" style="top: 10px; position: relative"></a></span>
-
-  </footer>
-
-</body>
+		<h1>SEE ALSO</h1>
+		<p>
+			<a href="https://squ.re/2POCGUK">WORK_AT_SQUARE(1)</a>,
+			<a href="https://squareup.com/legal/privacy">PRIVACY_POLICY(1)</a>,
+			<a href="https://squarectf.com/code_of_conduct.html">CODE_OF_CONDUCT(1)</a>
+		</p>
+		<div class="wideline end">
+			<span>Square, Inc.</span>
+			<span>October, 2018</span>
+			<span>SQUARE_CTF_WRITEUPS(1)</span>
+		</div>
+	</body>
 </html>
