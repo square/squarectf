@@ -1,212 +1,61 @@
+* {
+		font-family: monospace;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: #222;
-  color: #0c0;
-  font-family: monospace;
-  align-content: flex-end;
-  align-items: center;
-  word-wrap: break-word;
-  line-height: 1.5em;
-  letter-spacing: 0.5px;
-  margin: auto;
-  padding: 0 10px;
-  height: 100%;
-  width: 100%;
-  max-width: 820px;
-  box-sizing: border-box;
-  text-shadow: 2px 2px #000;
+		width: 78ch;
+}
+
+h1, h2 {
+		display: unset;
+    font-size: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    font-weight: unset;
+		text-transform: uppercase;
 }
 
 ul {
-  padding-left: 1.25em;
+		list-style: none;
+		padding-left: 0;
+		margin-top: 0;
 }
 
-#logo_outer {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 9%;
+li:before {
+		content: "o";
+		display: block;
+		float: left;
+		margin-left:-14ch;
+		padding-left: 7ch;
+		padding-right: 6ch;
 }
 
-#logo {
-  position: absolute;;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+li {
+		display: block;
+		padding-left: 14ch;
+		padding-bottom: 1em;
 }
 
-#logo div {
-  display: flex;
-  flex-grow: 1;
+p {
+		margin-top: 0;
+		padding-left: 7ch;
 }
 
-#logo span {
-  display: inline-block;
-  flex-grow: 1;
+.wideline {
+		display: flex;
+		justify-content: space-between;
 }
 
-#logo span:hover {
-  display: inline-block;
-  flex-grow: 1;
-  background-color: #007f00;
+.wideline.begin {
+		padding-bottom: 3em;
 }
 
-#logo .p {
-  background-color: #0c0;
-  box-shadow: 4px 4px #000;
+.wideline.end {
+		padding-top: 3em;
 }
 
-.nav {
-  padding: 10px 0 20px 0;
-  text-align: center;
-}
-
-.content {
-  width: 100%;
-  padding-top: 20px;
-}
-
-.spacer {
-  align-self: stretch;
-  margin: auto;
-}
-
-h1 {
-  padding-top: 20px;
-  font-weight: normal;
-  color: #0f0;
-  font-size: 30pt;
-}
-
-h2 {
-  padding-top: 20px;
-  font-weight: normal;
-  color: #0f0;
-  font-size: 20pt;
-}
-
-h3 {
-  font-weight: normal;
-  color: #0f0;
-}
-
-a {
-  color: #00fb00;
-  transition: color 0.5s ease;
-  text-decoration: underline;
-  text-decoration-skip: ink;
-  text-shadow: none;
-}
-
-a:hover {
-  color: #0c0;
-}
-
-a.ns {
-  padding: 0 5px;
-}
-
-a.s {
-  text-decoration: none;
-  color: #222;
-  background-color: #00fb00;
-  transition: background-color 0.5s ease;
-  padding: 0 5px;
-}
-
-a.s:hover {
-  background-color: #0c0;
-}
-
-.writeups a[href*=http] {
-    padding-right: 13px;
-    background: center right no-repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QoUCAwxd3+kYAAAAGhJREFUGNOFj90NwCAIhA/jRu6EM+lMdabrQ0XxJ+kRQiBfDhCS8JIs68DmHpTaId2oDATfUyloAOrpGK+r0gl+jqWnrU3A7hz9HVeoekdzaivEQplVwREPOHoFScIyHE8UXBXHfT96AXoqM2PdWVmeAAAAAElFTkSuQmCC")
-}
-
-footer {
-   text-align: center;
-   width: 100%;
-   padding-top: 7px;
-   margin-top: 20px;
-   border-top: 1px solid #000;
-}
-
-th {
-  text-align: left;
-}
-
-table {
-  width: 100%;
-}
-
-.challenges th {
-  padding: 0 10px;
-  font-weight: normal;
-}
-
-.challenges td {
-  padding: 10px;
-  word-break: break-all;
-  text-shadow: none;
-}
-
-.challenges tbody tr:nth-of-type(odd) {
-  background-color: #3E4E50;
-}
-
-.challenges tbody tr:nth-of-type(even) {
-  background-color: #30332E;
-}
-
-.challenges img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.title {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #3E4E50;
-  padding: 1em;
-}
-
-blink {
-  animation: 1s ease infinite condemned_blink_effect;
-}
-
-@keyframes condemned_blink_effect {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-code {
-  display: block;
-  padding-left: 10px;
-  border-left: 4px solid #007f00;
-}
-
-.inv {
-  color: #222;
-  background-color: #007f00;
-  text-shadow: none;
-}
-
-.credits {
-  font-size: 1px;
-  border: 0px;
-  margin: 0px;
-  text-shadow: none;
-  line-height: 2px;
+.wideline span {
+		flex: 0 1 auto;
 }
