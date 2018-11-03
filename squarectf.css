@@ -1,9 +1,15 @@
 * {
-		font-family: monospace;
+		font-family: Consolas, monaco, monospace;
 }
 
 body {
 		width: 78ch;
+		background-color: #151515;
+		color: #fff;
+}
+
+a {
+		color: #f00;
 }
 
 h1, h2, h3 {
@@ -15,6 +21,7 @@ h1, h2, h3 {
     margin-inline-end: unset;
     font-weight: unset;
 		text-transform: uppercase;
+		color: #0f0;
 }
 
 ul {
