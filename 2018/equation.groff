@@ -1,0 +1,21 @@
+.EQ
+F(X) ˜=˜ left {
+matrix{
+lcol{ {4 X} above
+{1}above
+{4 ( 1 - X )}
+}
+lcol{
+{ roman{"if "}
+0 <= X <= 1 smallover 4
+} above
+{ roman{"if "}
+1 smallover 4 <= X <=
+3 smallover 4
+} above
+{ roman{"if "}
+3 smallover 4 <= X <= 1
+}
+}
+}
+.EN

@@ -59,3 +59,7 @@ p {
 .wideline span {
 		flex: 0 1 auto;
 }
+
+div.prewrapper {
+		padding-left: 7ch;
+}
