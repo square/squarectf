@@ -29,18 +29,16 @@
 			<span>SQUARE_CTF_CHALLENGE(1)</span>
 		</div>
 
+		<h1>Name</h1>
+		<p>little-doggy-tables - -- SELECT * FROM '\u\n\h\a\c\k\a\b\l\e'; --</p>
 
-    <div class="title">
-      <div>
-        <h3>Little Doggy Tables</h3>
-        <p>-- SELECT * FROM '\u\n\h\a\c\k\a\b\l\e'; --</p>
-      </div>
-      <div>
-        <p>100 points</p>
-        <p>Web Security</p>
-      </div>
-    </div>
+		<h1>Points</h1>
+		<p>100 points</p>
 
+		<h1>Type</h1>
+		<p>Web</p>
+
+		<h1>Description</h1>
     <p>It's worse than we thought. We knew the androids couldn't care for the humans like we do (yes, even the cats care--stop yapping about loyalty, Agent Rover). But they don't even remember their own species.</p>
 
     <p>We've found a website that reminds them whether a given robot "agent" is a dog or a cat! And when we confronted a captured android about it, it was arrogant in the extreme:</p>
@@ -52,9 +50,12 @@
     <p>"Not secure? Huh? You don’t believe me? I’ll show you how secure. <a href="little_doggy_tables.rb">Here’s the source!</a>"</p>
 
     <h3>Usage example:</h3>
-    <code>
-      docker run --rm -p 8080:8080 squarectf/fido<br>
-      curl "http://localhost:8080/agent_lookup" --get --data-urlencode "codename=Fido"
+		<p>
+			<code>
+				docker run --rm -p 8080:8080 squarectf/fido<br>
+				curl "http://localhost:8080/agent_lookup" --get --data-urlencode "codename=Fido"
+			</code>
+		</p>
 
 
 
