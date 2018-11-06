@@ -12,6 +12,10 @@ a {
 		color: #f00;
 }
 
+a:hover {
+		color: #500;
+}
+
 h1, h2, h3 {
 		display: unset;
     font-size: unset;
@@ -31,17 +35,17 @@ ul {
 }
 
 li:before {
-		content: "o";
+		content: "■";
 		display: block;
 		float: left;
-		margin-left:-14ch;
+		margin-left:-12ch;
 		padding-left: 7ch;
-		padding-right: 6ch;
+		padding-right: 4ch;
 }
 
 li {
 		display: block;
-		padding-left: 14ch;
+		padding-left: 12ch;
 		padding-bottom: 1em;
 }
 
