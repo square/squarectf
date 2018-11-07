@@ -80,3 +80,9 @@ table {
 		padding-left: 7ch;
 		margin-bottom: 1em;
 }
+
+.inv {
+	border: 1px solid white;
+	font-size: small;
+	padding: 2px;
+}

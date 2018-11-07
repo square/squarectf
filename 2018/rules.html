@@ -30,12 +30,14 @@
 		</div>
 
 		<h1>Name</h1>
-		<p>contest-rules  -  2018 Square Capture  the  Flag rules | CTF will run from November 8th, 2018 to November 14th, 2018! | Registration will open soon.</p>
+		<p>contest-rules  -  2018 Square Capture  the  Flag rules.</p>
 
     <h2>Flag format</h2>
     <p>You know you have successfully solved a puzzle if you find a string which matches the following
-      <a href="https://imgs.xkcd.com/comics/regular_expressions.png">regular expression</a>: <span>/flag-[0-9a-f]{8,16}/</span>.
-      For instance, <span class="inv">flag-27fbe50bf1ccdaf5cfc9a1</span> would be a valid flag.
+      <a href="https://imgs.xkcd.com/comics/regular_expressions.png">regular expression</a>: <span>/flag-[0-9a-f]{8,16}/i</span>.
+		</p>
+		<p>
+      For instance, <span class="inv">flag-27fbe50bf1ccdaf5cfc9a1</span> or <span class="inv">FLAG-E8EFDA46</span> would be valid flags.
     </p>
 
     <h2>Timed release</h2>
@@ -51,12 +53,12 @@
 		</p>
 		<div class="prewrapper">
 			<pre>
-      |             s  |
-      |           -----|
-      |           60000|
-      |         1      |
-pts = |10000 * ---     |
-      |_        2     _|
+      |              s   |
+      |            ----- |
+      |            60000 |
+      |          1       |
+pts = | 10000 * ---      |
+      |_         2      _|
 			</pre>
 		</div>
 
