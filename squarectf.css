@@ -91,3 +91,17 @@ table {
 	font-size: small;
 	padding: 2px;
 }
+
+table {
+	border-spacing: 0;
+}
+
+th {
+	text-align: left;
+	padding: 0.5rem 1ex;
+}
+
+td {
+	border-top: 1px solid #444;
+	padding: 0.5rem 1rem;
+}
