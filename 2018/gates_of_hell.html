@@ -1,6 +1,6 @@
 <html lang="en">
 	<head>
-		<title>Square CTF 2017: Security is QRyptous</title>
+		<title>Square CTF 2018: gates of hell</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,13 +10,13 @@
 		<meta name="og:url" content="https://squarectf.com/">
 		<meta property="og:type" content="website">
 		<meta name="og:description" content="Compete to solve security-related challenges.">
-		<meta property="og:image" content="/og.png">
+		<meta property="og:image" content="../og.png">
 
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@SquareCTF">
 		<meta name="twitter:title" content="Square CTF: hacking competition!">
 		<meta name="twitter:description" content="Compete to solve security-related challenges.">
-		<meta name="twitter:image" content="/og.png">
+		<meta name="twitter:image" content="../og.png">
 
 		<meta name="description" content="Compete to solve security-related challenges.">
 		<meta name="author" content="Square, Inc.">
@@ -24,30 +24,28 @@
 	</head>
 	<body>
 		<div class="wideline begin">
-			<span>SECURITY IS QRYPTOUS(2017)</span>
+			<span>C6: GATES OF HELL(2018)</span>
 			<span><a href="../index.html"><img src="../sqlogo.svg"></a></span>
-			<span>SECURITY IS QRYPTOUS(2017)</span>
+			<span>C6: GATES OF HELL(2018)</span>
 		</div>
 
 		<h1>Name</h1>
-		<p>security-is-qryptous - Treasure hunt</p>
-
-		<h1>Points</h1>
-		<p>10 points</p>
+		<p>C6: gates of hell</p>
 
 		<h1>Type</h1>
-		<p>Grace</p>
+		<p>Reverse</p>
 
-		<h1>Description</h1>
-    <p>Our operative at the Grace Hopper Conference was sniffing around outside the center when she noticed an exiting attendee drop a small piece of paper. She glimpsed a code on it--but before she could capture the paper, a leggy android hound pinned the paper down with one metal foot, scanned it with glowing eyes, then increased the intensity of its laser gaze, burned the paper to a crisp, and singed our operative's whiskers with a glare. We need to know what command code was on that paper. Can you find another copy in the conference?</p>
-
+		<h1>Docker</h1>
 		<p>
-			<i>
-				<small>Updated at 2017-10-04T21:37:55.000Z</small><br>
-				We have discovered an error in that the solution to this challenge is actually publically available on the internet instead of restricted to GHC attendees. As a result, we are no longer making this a Grace Hopper challenge, and instead it has been downgraded to a Physical challenge. Scoring and leaderboard have been adjusted accordingly.
-			</i>
+			You will need to run the following command before you can play this challenge:<br><br>
+			<span class="inv">docker run --rm --env PORT=80 -p 8081:80 squarectf/gates-of-hell</span>
 		</p>
 
+		<h1>Description</h1>
+		<p>C6 is a Linux based system. It was brought to Charvis by the very first settlers. You found a USB drive with a
+			copy of the <a href="gates_of_hell.tar.gz">executable</a>.</p>
+		<p>Now, all you need to do is figure out the correct input to disable C6 through its
+			<a href="http://localhost:8081/cgi-bin/gates-of-hell.pl">online interface</a>.
 
 		<h1>SEE ALSO</h1>
 		<p>
