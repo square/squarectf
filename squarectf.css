@@ -64,6 +64,10 @@ p {
 		padding-bottom: 3em;
 }
 
+.wideline.begin img {
+ 		height: 1rem;
+}
+
 .wideline.end {
 		padding-top: 3em;
 }
