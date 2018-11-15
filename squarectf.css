@@ -57,6 +57,7 @@ p {
 .wideline {
 		display: flex;
 		justify-content: space-between;
+		font-size: small;
 }
 
 .wideline.begin {
