@@ -1,6 +1,6 @@
 <html lang="en">
 	<head>
-		<title>Square CTF 2017: Security is QRyptous</title>
+		<title>Square CTF 2018: leaky power</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
 		<meta name="twitter:site" content="@SquareCTF">
 		<meta name="twitter:title" content="Square CTF: hacking competition!">
 		<meta name="twitter:description" content="Compete to solve security-related challenges.">
-		<meta name="twitter:image" content="/og.png">
+		<meta name="twitter:image" content="../og.png">
 
 		<meta name="description" content="Compete to solve security-related challenges.">
 		<meta name="author" content="Square, Inc.">
@@ -24,30 +24,27 @@
 	</head>
 	<body>
 		<div class="wideline begin">
-			<span>SECURITY IS QRYPTOUS(2017)</span>
+			<span>C4: LEAKY POWER(2018)</span>
 			<span><a href="../index.html"><img src="../sqlogo.svg"></a></span>
-			<span>SECURITY IS QRYPTOUS(2017)</span>
+			<span>C4: LEAKY POWER(2018)</span>
 		</div>
 
 		<h1>Name</h1>
-		<p>security-is-qryptous - Treasure hunt</p>
-
-		<h1>Points</h1>
-		<p>10 points</p>
+		<p>C4: leaky power</p>
 
 		<h1>Type</h1>
-		<p>Grace</p>
+		<p>Cryptology</p>
 
 		<h1>Description</h1>
-    <p>Our operative at the Grace Hopper Conference was sniffing around outside the center when she noticed an exiting attendee drop a small piece of paper. She glimpsed a code on it--but before she could capture the paper, a leggy android hound pinned the paper down with one metal foot, scanned it with glowing eyes, then increased the intensity of its laser gaze, burned the paper to a crisp, and singed our operative's whiskers with a glare. We need to know what command code was on that paper. Can you find another copy in the conference?</p>
-
-		<p>
-			<i>
-				<small>Updated at 2017-10-04T21:37:55.000Z</small><br>
-				We have discovered an error in that the solution to this challenge is actually publically available on the internet instead of restricted to GHC attendees. As a result, we are no longer making this a Grace Hopper challenge, and instead it has been downgraded to a Physical challenge. Scoring and leaderboard have been adjusted accordingly.
-			</i>
+		<p>C4 is a very advanced AES based defensive system. You are able to monitor the power lines. Is that enough?</p>
+		<p>You’re given <a href="leaky_power.tar.gz">three files</a>:
+			<ul>
+				<li>powertraces.npy: Measurements (over time) of power consumption of a chip while performing AES encryption</li>
+				<li>plaintexts.npy: Corresponding plaintext inputs that were encrypted</li>
+				<li>instructions.jwe: File encrypted using the same key as plaintexts.npy.</li>
+			</ul>
 		</p>
-
+		<p>note: The first two files are NumPy arrays.</p>
 
 		<h1>SEE ALSO</h1>
 		<p>
