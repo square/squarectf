@@ -6,6 +6,12 @@ body {
 		width: 78ch;
 		background-color: #151515;
 		color: #fff;
+		background-image: url("badge.svg");
+		background-repeat: no-repeat;
+		background-size: 70ch;
+		background-position-x: 4ch;
+		background-position-y: center;
+		background-attachment: fixed;
 }
 
 a {
