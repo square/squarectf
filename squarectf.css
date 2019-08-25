@@ -30,7 +30,7 @@ h1, h2, h3 {
     margin-inline-start: unset;
     margin-inline-end: unset;
     font-weight: unset;
-		text-transform: uppercase;
+		font-variant: small-caps;
 		color: #0f0;
 }
 
