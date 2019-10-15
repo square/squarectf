@@ -1,0 +1,1 @@
+<body onclick="a=new AudioContext;[i=0,0,2,0,5,4,0,0,2,0,7,5,0,0,12,9,5,4,2,10,10,9,5,7,5].map(n=>{o=a.createOscillator();o.start(i);o.frequency.value*=1.06**n;h=a.createGain();h.gain.linearRampToValueAtTime(0,++i);o.connect(h);h.connect(a.destination)})">click
