@@ -1,0 +1,176 @@
+<html lang="en">
+	<head>
+		<title>Square CTF: How to run a capture the flag by Alok Menghrajani</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+		<meta name="og:title" content="Square CTF: hacking competition!">
+		<meta name="og:url" content="https://squarectf.com/">
+		<meta property="og:type" content="website">
+		<meta name="og:description" content="Compete to solve security-related challenges.">
+		<meta property="og:image" content="/og.png">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@SquareEng">
+		<meta name="twitter:title" content="Square CTF: We make security and hacking more approachable — since 2014.">
+		<meta name="twitter:description" content="Compete to solve security-related challenges.">
+		<meta name="twitter:image" content="/og.png">
+
+		<meta name="description" content="Compete to solve security-related challenges.">
+		<meta name="author" content="Square, Inc.">
+		<link rel="stylesheet" media="screen" href="squarectf.css">
+	</head>
+	<body>
+		<div class="wideline begin">
+			<span>Square_CTF(Notes)</span>
+			<span><a href="index.html"><img src="sqlogo.svg"></a></span>
+			<span>Square_CTF(Notes)</span>
+		</div>
+
+		<h1>Overview</h1>
+		<p>I ran/helped run Square's Capture-The-Flag events from 2015-2019.
+			Moving forward, I'm happy to have found a group of very talented engineers
+			at Square to host our future events. This document contains my notes for
+			anyone interested to host their own internal or external events.</p>
+
+		<h1>What is a Capture-The-Flag?</h1>
+		<p>A Capture-The-Flag (CTF) is a computer security competition where
+			participants practice their security attack and defense skills to solve
+			challenges to gain points.</p>
+		<p>One of the motivations for running a CTF is to try and make security and
+			hacking more approachable.
+		</p>
+		<p>Organizing such events usually takes 4-5 volunteers, a small amount
+			of money, and a ton of time.</p>
+
+		<h1>My Typical Timeline</h1>
+
+		<p><b>12 months prior</b></p>
+		<ul>
+		<li>Get approval from management. Usually the main issue is budget and we
+			typically request $1,000-$2,000 (pro-tip: request 2x what you think you'll need).</li>
+		<li>List event on <a href="https://ctftime.org/calendar/">CTFtime</a>. It's the main calendar everyone uses to find
+			out about CTFs.</li>
+
+		<p></p>
+		<p><b>4 months prior</b></p>
+		<ul>
+		<li>Reach out to co-workers for volunteers. In the past, some people
+			incorrectly felt they couldn't volunteer without some prior specific
+			security knowledge. Make it clear that anyone can help out!
+			<br/></br>
+			We usually look for: 1 person for story writing, 2 people
+			for making puzzles, 2 or more people for testing puzzles, and 1 person for
+			prizes.
+			<br/></br>
+			If I can't find a volunteer for a given role, I end up doing it
+			myself.</li>
+		<li>Start discussing puzzle ideas, how easy or hard we want to make each
+			one, etc. This is one of the hardest part of the entire process. Lots of
+		  interesting ideas end up unsuitable for puzzles. Real world security
+			issues are great sources of inspiration.</li>
+		<li>The following tips are useful when making puzzles:
+		<p><ul>
+			<li>Try to make puzzles which are educational. Unless your puzzle boils
+				down to a sudoku or a maze, it is probably going to inherently require
+				learning or applying some knowledge.</li>
+			<li>A puzzle which requires some thinking / can be solved without sitting
+				in front of a computer the whole time is great.</li>
+			<li>A bit of mystery / not making the next step too obvious is nice. The
+				risk is having a puzzle which requires some guess work, which can be
+				frustrating. One option is to make puzzles with one obvious but hard
+				solution and another less obvious but easier. Overall, a hard balance to
+				strike.</li>
+			<li>Each puzzle should have one or more flags. Ensure the flag fits the
+				agreed upon format. Make sure each possible solution maps to a flag.</li>
+			<li>Puzzles can run client side or server side. For server side puzzles,
+				make it run inside Docker. In the past, we tried to give each team a
+				container but orchestration became challenging. As a result, we make
+				containers immutable and shared (e.g. if your puzzle requires exploiting
+				a SQLi, make sure the flag can't be deleted once found).</li>
+			<li>Once your puzzle is ready, have one or more people test it (to ensure
+				it is solvable). Ask the person testing your puzzle to track roughly how
+				long it took to solve. If you tweak anything based on feedback from
+				people testing your puzzle, make sure you get someone to retest the
+				modified puzzle.</li>
+		</ul></p></li>
+
+		<li>As a tradition, we have had a puzzle which requires programming or
+			understanding obscure/unexpected languages. In 2017, I made a
+			<a href="2017/ciphercel.html">Google Sheet</a> puzzle. In 2018, it was
+			<a href="2018/postfuscator.html">PostScript</a>. In 2019, it was a
+			<a href="2019/makefile.html">Makefile</a>. The
+			purpose of these esoteric puzzles is to level the playing field since it's
+			unlikely for people to have a knowledge or tooling edge.</li>
+
+		<li>The following list is used to classify puzzles into categories. We try
+			to ensure we have a variety of puzzles:
+		<p><ul>
+			<li>Pure coding. Solving requires writing some code and doing little of
+				anything else. E.g. given an encoder, write the decoder (or
+				vice-versa).</li>
+			<li>Crackme. Given a piece of code, find the input which displays the flag.
+				Requires understanding what the code is doing without having to find an
+				exploit. Derive the flag from the input/partially from the
+				input (be careful about having multiple solutions) so that you can’t
+				simply modify branches in the code.</li>
+			<li>Exploit: typically stack, buffer overflow. Similar to crackme, but
+				requires going one step further.</li>
+			<li>Web security: typically SQLi or manipulating cookies. Or other
+				web-specific things.</li>
+			<li>Cryptography: homemade crypto gone wrong. Or known weaknesses.</li>
+		</ul></p>
+		</li>
+
+		<p></p>
+		<p><b>2 weeks prior</b></p>
+		<p>Test, test, test. Our infrastructure (and costs) boils down to:
+			<li>Github pages for static pages ($0).</li>
+			<li>Slack for discussion / coordination ($0).</li>
+			<li>Cloudflare for caching ($0).</li>
+			<li>Custom piece of Go code running on Heroku (~$100). The code is similar
+			to <a href="https://github.com/CTFd/CTFd">CTFd</a> but tries to achieve a
+			much higher cache hit-rate.</li>
+			<li>Amazon AWS ECS for running containers (~$100).</li>
+		</p>
+
+		<p>My main concern is to <b>keep our servers up</b> while <b>minimizing</b> costs.
+			Every year, we bring the infrastructure up for a couple days and then
+			everything off. Since we are dealing with ephemeral systems and devops isn't
+			our forte, we make mistakes and run into surprising issues&nbsp;¯\_(ツ)_/¯.</p>
+
+		<p>Start <span style="text-decoration: line-through">spamming</span> posting
+			on social media. One year, we did three
+			<a href="https://twitter.com/SquareCTF/status/1170060840550031360">warm</a>
+			<a href="https://twitter.com/squareeng/status/1172567307593248769">up</a>
+			<a href="https://twitter.com/alokmenghrajani/status/1179658544129273856">puzzles,</a>
+			which was fun.
+		</p>
+
+		<p></p>
+		<p><b>post-event</b></p>
+		<ul>
+			<li>Turn infrastructure off.</li>
+			<li>Use the remaining budget (usually ~$800) to buy (or craft) prizes and mail them.</li>
+			<li>Archive puzzles on this site (yes, you can go back and play every previous puzzle!).</li>
+			<li>Hold a post-mortem session with all volunteers to document what went
+				well and what can be improved in subsequent years.</li>
+		</ul>
+
+		<p align="center">* * * </p>
+		<p></p>
+		<p>That's it. I would like to thank everyone who helped out along the way as
+			well as everyone who participated in our events! I hope you'll find this
+			information useful. Keep in mind that the first year is the most work,
+			subsequent events require less work and run smoother.</p>
+		<p align="right">-- Alok Menghrajani</p>
+
+		<div class="wideline end">
+			<span>Square, Inc.</span>
+			<span>(c) <script>document.write(new Date().toLocaleString("en-us", {month: "long", year: "numeric"}));</script></span>
+			<span>Square_CTF(Notes)</span>
+		</div>
+	</body>
+</html>

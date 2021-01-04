@@ -69,6 +69,22 @@ li {
 		padding-bottom: 0.5em;
 }
 
+li li:before {
+		content: "▪";
+		display: block;
+		float: left;
+		margin-left:-12ch;
+		padding-left: 7ch;
+		padding-right: 4ch;
+}
+
+li li {
+		display: block;
+		padding-left: 5ch;
+		padding-bottom: 0.5em;
+    font-size: small;
+}
+
 p {
 		margin-top: 0;
 		padding-left: 7ch;
