@@ -1,0 +1,81 @@
+{
+    "challenges": {
+          "LWNKAyEAXv5": {
+      "name": "its just an xor",
+      "description": "Whats the matter it's just an xor <br><a href=/static/files/xor/itsjustanxor>itsjustanxor</a> <br><br><div class=chal-link>nc challenges.2021.squarectf.com 6001</div>",
+      "topics": ["reversing"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 150
+    },
+          "azPWnb7OU2b": {
+      "name": "Im a credential ghoul",
+      "description": "Scientists at the LIC are worried their key generation system is flawed. Can you log into their production systems to prove it? <br><br><a href='http://challenges.2021.squarectf.com:5001'>challenges.2021.squarectf.com:5001</a>",
+      "topics": ["cryptography"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 300
+    },
+          "JEdEERLHmME": {
+      "name": "Out Of Cash",
+      "description": "After complaints of stolen credit card info, the EMV parser has been updated to allow for deleting records.<br>Show them thats not enough<a href=/static/files/out-of-cash/out-of-cash>out-of-cash</a> <br><a href=/static/files/out-of-cash/libc-2.31.so>libc-2.31.so</a> <br><br><div class=chal-link>nc challenges.2021.squarectf.com 7004</div>",
+      "topics": ["exploitation"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 300
+    },
+          "8c6zIY7sYag": {
+      "name": "Korean Space Program",
+      "description": "The Korean Space Program's login portal is having trouble with unauthorized access to their systems. You can find their login page linked. Can you take a look at it and the included source file to figure out what is wrong? <br><a href=/static/files/korean-space/app.js>app.js</a> <br><br><a href='http://challenges.2021.squarectf.com:8002'>challenges.2021.squarectf.com:8002</a>",
+      "topics": ["web"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 150
+    },
+          "V_DKS-jiXxV": {
+      "name": "Memory Safe Hex Decode",
+      "description": "Since this is not a binary exploitation challenge, this binary was written in a memory safe language - Rust! This binary takes in an input on stdin and outputs either \"Valid flag!\" or \"Invalid flag!\". <br><a href=/static/files/hex-decode/hex-decode.bin>hex-decode.bin</a>",
+      "topics": ["reversing"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 200
+    },
+    "GpGfvN5vN3O": {
+      "name": "Card Theft",
+      "description": "We found an EMV parser in the wild reading credit card information.<br>Looks like someone just processed their credit card.<br>We've got an obfuscated binary for you to take a look at, but we think you should be able to get their credit card.<br>Flag would be flag{credit-card} <br><a href=/static/files/card-theft/card-theft>card-theft</a> <br><br><div class=chal-link>nc challenges.2021.squarectf.com 7001</div>",
+      "topics": ["exploitation"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 100
+    },
+          "DGvajSr3hYL": {
+      "name": "Huge Primes",
+      "description": "Find two numbers that multiply to be equal to this number which is the product of two primes: 22952152323332505688670761214671498225451684330137990990356473040741684014997701799009910066964917896400501477 <br><a href=/static/files/hugeprimes/sourcecode.js>sourcecode.js</a> <br><br><a href='http://challenges.2021.squarectf.com:8001'>challenges.2021.squarectf.com:8001</a>",
+      "topics": ["web"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 50
+    },
+          "NU23GoM3fd2": {
+      "name": "collatzeral damage",
+      "description": "I wrote this sick new hashing algorithm that I'm so confident in, i've used it to protect my shiny new flag. I hashed the flag using this script, and stored the flag in an encrypted zip file with the password set as the flag's hash. Good luck trying to break my bulletproof cryptography! I'll even give you a hint - the flag is 33 bytes long. <br><a href=/static/files/collatzeral/collatzeral-damage.py>collatzeral-damage.py</a> <br><a href=/static/files/collatzeral/flag.zip>flag.zip</a>",
+      "topics": ["cryptography"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 200
+    },
+    "nOQNrIgGX41": {
+      "name": "Burnt Bread",
+      "description": "The EMV parser we found no longer has credit card info in memory, but <br>We think you might be able to find something if you can pwn it <br><a href=/static/files/burnt-bread/burnt-bread>burnt-bread</a> <br><a href=/static/files/burnt-bread/libc-2.31.so>libc-2.31.so</a> <br><br><div class=chal-link>nc challenges.2021.squarectf.com 7002</div>",
+      "topics": ["exploitation"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 200
+    },
+    "gAeqPUK6k6V": {
+      "name": "Gil Triangle",
+      "description": "Looks look they have a new way of storing customer information.<br> There's a credit card we want and we think it went through <br> their machine. It ends in 4855. <br><a href=/static/files/gil-triangle/gil-triangle>gil-triangle</a> <br><br><div class=chal-link>nc challenges.2021.squarectf.com 7003</div>",
+      "topics": ["exploitation"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 200
+    },
+    "QM7azpAfz5X": {
+      "name": "Memory Safe Strcmp",
+      "description": "Since this is not a binary exploitation challenge, this binary was written in a memory safe language - Rust! This binary takes in an input on stdin and outputs either \"Valid flag!\" or \"Invalid flag!\". <br><a href=/static/files/strcmp/strcmp.bin>strcmp.bin</a>",
+      "topics": ["reversing"],
+      "release": "2021-11-20T01:00:00Z",
+      "points": 100
+    }
+  }
+}
