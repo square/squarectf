@@ -13,12 +13,12 @@ def link_wrap(text, href):
 
 
 def num_to_text(num):
-   num_texts = [
-       'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
-       'ten', 'eleven'
-   ]
+    num_texts = [
+        'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+        'ten', 'eleven'
+    ]
 
-   return num_texts[num]
+    return num_texts[num]
 
 
 def chal_page_name(name):
@@ -40,10 +40,7 @@ def generate_index(challenge_json, year):
     count = 0
     for _, chal in challenge_json.items():
         chal_indiv_tree = []
-        chal_name_line = '├──┬── '
-        chal_name_line += num_to_text(count)
-        chal_name_line += ': '
-        chal_name_line += link_wrap(chal['name'], chal_page_name(chal['name']))
+        chal_name_line = link_wrap(chal['name'], chal_page_name(chal['name']))
 
         chal_cat_line = '│  ├── '
         chal_cat_line += chal['topics'][0]
@@ -58,7 +55,8 @@ def generate_index(challenge_json, year):
         chal_indiv_tree.append('│  │')
         chal_indiv_tree.append(chal_pts_line)
 
-        chal_tree.append('\n'.join([span_wrap(x) for x in chal_indiv_tree]) + '\n')
+        chal_tree.append('\n'.join([span_wrap(x)
+                                    for x in chal_indiv_tree]) + '\n')
         count += 1
 
     divider = '\n'.join([span_wrap(x) for x in '│' * 3]) + '\n'
@@ -77,7 +75,8 @@ def clean_description(description):
             taboo_begin = description.find(taboo_begins[i])
             taboo_end = description[taboo_begin:].find(taboo_ends[i])
 
-            description = description[:taboo_begin] + description[taboo_begin+taboo_end+len(taboo_ends[i]):]
+            description = description[:taboo_begin] + description[
+                taboo_begin + taboo_end + len(taboo_ends[i]):]
 
     description = description.strip()
 
@@ -103,12 +102,14 @@ def generate_chal_pages(challenge_json, year):
     count = 0
     for _, chal in challenge_json.items():
         chal_page = template
-        chal_page = chal_page.replace('{num}', str(count+1))
+        chal_page = chal_page.replace('{num}', str(count + 1))
         chal_page = chal_page.replace('{year}', str(year))
         chal_page = chal_page.replace("{name}", chal['name'])
         chal_page = chal_page.replace('{topic}', chal['topics'][0])
         chal_page = chal_page.replace('{points}', str(chal['points']))
-        chal_page = chal_page.replace('{description}', add_zip(clean_description(chal['description']), chal['name']))
+        chal_page = chal_page.replace(
+            '{description}',
+            add_zip(clean_description(chal['description']), chal['name']))
 
         chal_pages[chal_page_name(chal['name'])] = chal_page
         count += 1
@@ -127,11 +128,10 @@ def write_pages(index_page, chal_pages, year):
 
 
 if __name__ == '__main__':
-    year = 2021
+    year = 2022
 
     challenge_json = parse_json(year)
     index_page = generate_index(challenge_json, year)
     chal_pages = generate_chal_pages(challenge_json, year)
 
     write_pages(index_page, chal_pages, year)
-

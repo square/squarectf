@@ -1,0 +1,258 @@
+{
+    "challenges": {
+        "pulse-check": {
+            "name": "Pulse Check",
+            "description": "Pulse check both for yourselves and for our infrastructure: the flag is flag{im_alive_and_so_are_the_servers}",
+            "topics": [
+                "pulse-check"
+            ],
+            "release": "2022-11-19T01:00:00Z",
+            "files": [
+                ""
+            ],
+            "points": 1
+        },
+        "ez-pwn-1": {
+            "name": "EZ pwn 1",
+            "description": "Memory safety? Whats that?<br>Required Reading:<br>- https://en.wikipedia.org/wiki/Stack_buffer_overflow<br><br><a href='/static/files/ez-pwn-1/ez-pwn-1'>ez-pwn-1</a>, <a href='/static/files/ez-pwn-1/ez-pwn-1.c'>source</a><br><br>nc chals.2022.squarectf.com 4100",
+            "topics": [
+                "ez-pwn"
+            ],
+            "points": 50,
+            "release": "2022-11-19T01:00:01Z",
+            "files": [
+                "ez-pwn-1",
+                "ez-pwn-1.c"
+            ]
+        },
+        "ez-pwn-2": {
+            "name": "EZ pwn 2",
+            "description": "Fun fact, I wrote this last friday because of a work related slack thread.<br>Required reading:<br>- intro to x86 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html<br>- x86-64 stack layout https://eli.thegreenplace.net/2011/09/06/stack-frame-layout-on-x86-64<br>- Stack Canaries https://www.sans.org/blog/stack-canaries-gingerly-sidestepping-the-cage/<br>- stack based buffer overflows https://en.wikipedia.org/wiki/Stack_buffer_overflow<br>- ASLR https://en.wikipedia.org/wiki/Address_space_layout_randomization<br>Optional Reading:<br>- pwntools https://docs.pwntools.com/en/stable/intro.html#making-connections<br><br><a href='/static/files/ez-pwn-2/ez-pwn-2'>ez-pwn-2</a>, <a href='/static/files/ez-pwn-2/ez-pwn-2.c'>source</a><br><br>nc chals.2022.squarectf.com 4101",
+            "topics": [
+                "ez-pwn"
+            ],
+            "points": 100,
+            "release": "2022-11-19T01:00:02Z",
+            "files": [
+                "ez-pwn-2",
+                "ez-pwn-2.c"
+            ]
+        },
+        "ez-re-1": {
+            "name": "EZ RE 1",
+            "description": "all that cryptography stuff is real confusing. how hard could it REALLY be?<br>Required Reading:<br>- intro to x86 https://www.cs.virginia.edu/~evans/cs216/guides/x86.html<br>- basic documentation for a disassembler of your choosing (try Ghidra, Binary Ninja Cloud, or IDA Freeware)<br><br><a href='/static/files/ez-re-1/ez-re-1_elf'>elf binary</a>, <a href='/static/files/ez-re-1/ez-re-1_macho'>macho binary</a>",
+            "topics": [
+                "ez-re"
+            ],
+            "points": 100,
+            "release": "2022-11-19T01:00:03Z",
+            "files": [
+                "ez-re-1_elf",
+                "ez-re-1_macho"
+            ]
+        },
+        "emoji-hunt": {
+            "name": "Emoji Hunt",
+            "description": "I was looking at some slack emojis the other day and it seemed like they had a bit more data than they were supposed to... In fact, it even looked like there were bits of flag floating around in them.",
+            "topics": [
+                "misc"
+            ],
+            "points": 100,
+            "release": "2022-11-19T01:00:04Z",
+            "files": [
+                ""
+            ]
+        },
+        "square-payment-terminal": {
+            "name": "sqUARe paymenT terminal",
+            "description": "Found a <a href='/static/files/sqUARe_paymenT_terminal_pt1/Terminal_Cap.sal'>capture</a> of one of our hardware developers laptops...looks like it might contain a flag",
+            "topics": [
+                "misc"
+            ],
+            "points": 150,
+            "release": "2022-11-19T01:00:05Z",
+            "files": [
+                "Terminal_Cap.sal"
+            ]
+        },
+        "hard-copy": {
+            "name": "Hard Copy",
+            "description": "I printed a hard copy of the flag, but then I lost it. Will you help me recover it? Here's the <a href='/static/files/hard-copy/printer.go'>source code</a> for my printer and a recent <a href='/static/files/hard-copy/capture.pcap'>network traffic dump</a>.",
+            "topics": [
+                "crypto",
+                "reversing"
+            ],
+            "release": "2022-11-19T01:00:06Z",
+            "files": [
+                "capture.pcap",
+                "printer.go"
+            ],
+            "points": 300
+        },
+        "roplike-easy": {
+            "name": "ROPlike easy",
+            "description": "I've been working on a new <a href='/static/files/ROPlike-easy/roplike-easy'>roguelite idea</a>, I think its got great potential.<br><br>nc chals.2022.squarectf.com 4096",
+            "topics": [
+                "pwn"
+            ],
+            "points": 300,
+            "release": "2022-11-19T01:00:07Z",
+            "files": [
+                "roplike-easy"
+            ]
+        },
+        "roplike-medium": {
+            "name": "ROPlike medium",
+            "description": "<a href='/static/files/ROPlike-medium/roplike-medium'>v1.0.1</a> hotfix<br>- remove overpowered syscall gadget<br>- minor backend changes (does not impact gameplay)<br><br>nc chals.2022.squarectf.com 4097",
+            "topics": [
+                "pwn"
+            ],
+            "points": 350,
+            "release": "2022-11-19T01:00:08Z",
+            "files": [
+                "roplike-medium"
+            ]
+        },
+        "roplike-hard": {
+            "name": "ROPlike hard",
+            "description": "<a href='/static/files/ROPlike-hard/roplike-hard'>v1.0.2</a> balance changes<br>- reduce number of rounds to make game more fun and interesting<br>- add some anti-hacking mitigations because its come to my attention that SOME of you are cheating >:(<br><br>v1.0.1 hotfix<br>- remove overpowered syscall gadget<br>- minor backend changes (does not impact gameplay)<br><br>nc chals.2022.squarectf.com 4098",
+            "topics": [
+                "pwn"
+            ],
+            "points": 450,
+            "release": "2022-11-19T01:00:09Z",
+            "files": [
+                "roplike-hard"
+            ]
+        },
+        "three-item-menu": {
+            "name": "3 item menu",
+            "description": "Hello! Welcome to Square CTF, introducing everyone's favorite CTF three-item menu! <a href='/static/files/three_item_menu/three_item_menu'>three_item_menu</a>; <a href='/static/files/three_item_menu/libc.so.6'>libc.so.6</a><br><br>nc chals.2022.squarectf.com 4099",
+            "topics": [
+                "pwn",
+                "crypto"
+            ],
+            "points": 300,
+            "release": "2022-11-19T01:00:10Z",
+            "files": [
+                "three_item_menu",
+                "libc.so.6"
+            ]
+        },
+        "its-right-there": {
+            "name": "its right there",
+            "description": "I couldn't come up with an interesting android challenge, so I kinda just stuck the flag in a textbox. It's right there, <a href='/static/files/its-right-there/freeflag.apk'>just take it</a>.",
+            "topics": [
+                "reversing"
+            ],
+            "points": 100,
+            "release": "2022-11-19T01:00:11Z",
+            "files": [
+                "freeflag.apk"
+            ]
+        },
+        "yet-another-reversing-activity": {
+            "name": "Yet Another Reversing Activity",
+            "description": "Supposedly <a href='/static/files/yet-another-reversing-activity/flag.yarc'>this file</a> can recognize a flag. But what could it be?",
+            "topics": [
+                "reversing"
+            ],
+            "points": 300,
+            "release": "2022-11-19T01:00:13Z",
+            "files": [
+                "flag.yarc"
+            ]
+        },
+        "alex-hanlon-has-the-flag": {
+            "name": "Alex Hanlon Has The Flag!",
+            "description": "Alex Hanlon has saved the flag in his account! See if you can figure out his username and then login as him. But just know that it will be impossible to brute force his password.<br><br>http://chals.2022.squarectf.com:4102",
+            "topics": [
+                "web"
+            ],
+            "points": 50,
+            "release": "2022-11-19T01:00:14Z",
+            "files": [
+                ""
+            ]
+        },
+        "xark": {
+            "name": "xark",
+            "description": "Guest challenge by Alok Menghrajani.<br><br><a href='http://chals.2022.squarectf.com:4105'>http://chals.2022.squarectf.com:4105</a><br><br><a href='/static/files/xark/xark.zip'>source</a>",
+            "flag": "flag{kn3x3d_chall3ng3_pls}",
+            "release": "2022-11-19T01:00:14Z",
+            "topics": [
+                "web"
+            ],
+            "points": 250
+        },
+
+        "going-in-blind": {
+            "name": "Going In Blind",
+            "description": "Ok, the developers got smart, and figured out a way to prevent SQLi in the login page. Plus, they decided the flag shouldn't be hardcoded in the web application anymore. How could anyone get to it now?<br><br>http://chals.2022.squarectf.com:4103",
+            "topics": [
+                "web"
+            ],
+            "points": 200,
+            "release": "2022-11-19T01:00:15Z",
+            "files": [
+                ""
+            ]
+        },
+        "nojs": {
+            "name": "NoJS",
+            "description": "Reverting back to the ye-olde days, absolutely no javascript is allowed on my pure site. No vulnerabilities allowed here, no sir!<br><br>http://44.196.156.116:5000/login",
+            "topics": [
+                "web"
+            ],
+            "points": 400,
+            "release": "2022-11-19T01:00:16Z",
+            "files": [
+                ""
+            ]
+        },
+        "developers-hubris": {
+            "name": "Developer's Hubris",
+            "topics": [
+                "web"
+            ],
+            "release": "2022-11-19T01:00:18Z",
+            "description": "You're a new security engineer at the company, and you just found a fairly old, unfinished application running in a staging environment that is exposed to the internet. You bring this up to the developers, since it seems likely that hackers will look for ways to use this application as an entrypoint into the corporate environment. However, they tell you that it's just a basic bug report submission portal, and any dangerous code has been removed or hidden, so it should be safe. See if they left any loose ends that could be used to compromise the entire application<br><br>http://chals.2022.squarectf.com:4104",
+            "points": 500,
+            "files": [
+                ""
+            ]
+        },
+        "BLOCKchain": {
+            "name": "BLOCKchain",
+            "categories": ["reversing"],
+            "description": "Don't worry about how hot your machine's running, the heat won 't matter when we arrive at the heat death of the universe. That said, you may want to figure out some way to get the flag a little faster than that, considering the CTF won't last until then: ). <br><br><a href='/static/files/BLOCKchain/BLOCKchain'>BLOCKchain</a>",
+            "topics": [
+                "reversing"
+            ],
+            "points": 500,
+            "release": "2022-11-19T01:00:19Z",
+            "files": [""]
+        }
+    },
+    "flags": {
+        "flag{im_alive_and_so_are_the_servers}": "pulse-check",
+        "flag{f3rMat_For_NAu9hT_2563076}": "hard-copy",
+        "flag{i_wonder_if_steam_will_let_me_upload_this}": "roplike-easy",
+        "flag{i_really_hope_someone_falls_for_the_fake_flag_thing}": "roplike-medium",
+        "flag{milking_this_franchise_harder_than_todd_howard_milks_skyrim}": "roplike-hard",
+        "flag{hope_you_enjoy_this_appetizer}": "three-item-menu",
+        "flag{ctfs_just_give_you_flags_these_days_its_ridicul0us}": "its-right-there",
+        "flag{m33t_me_1n_7h3_ar3n4}": "yet-another-reversing-activity",
+        "flag{470bbbc0519e4bc6987bb00bef24a97a}": "alex-hanlon-has-the-flag",
+        "flag{kn3x3d_chall3ng3_pls}": "xark",
+        "flag{a7a7add7dd9a4eb3a8d2e9ce0ab39872}": "going-in-blind",
+        "flag{8db7145f70954219ba589a54586710da}": "developers-hubris",
+        "flag{too_bad_chrome_cant_hang}": "nojs",
+        "flag{emojis_more_like_free_cloud_storage}": "emoji-hunt",
+        "flag{h4rdw4r3h4ck3r}": "square-payment-terminal",
+        "flag{congrats_youve_exploited_a_memory_corruption_vulnerability}": "ez-pwn-1",
+        "flag{delphi_aint_got_nothin_on_printf}": "ez-pwn-2",
+        "flag{the_function_names_are_a_commutative_property_joke_get_it}": "ez-re-1",
+        "flag{objc_msgsend_more_like_objc_msg_end_this_please_plus_extra_junk_hahahaahahahahahahahaaaha}": "BLOCKchain"
+    }
+}
