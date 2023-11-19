@@ -38,7 +38,7 @@ def generate_index(challenge_json, year):
 
     chal_tree = []
     count = 0
-    for _, chal in challenge_json.items():
+    for chal in challenge_json:
         chal_indiv_tree = []
         chal_name_line = link_wrap(chal['name'], chal_page_name(chal['name']))
 
@@ -100,7 +100,7 @@ def generate_chal_pages(challenge_json, year):
         template = f.read()
 
     count = 0
-    for _, chal in challenge_json.items():
+    for chal in challenge_json:
         chal_page = template
         chal_page = chal_page.replace('{num}', str(count + 1))
         chal_page = chal_page.replace('{year}', str(year))
@@ -128,7 +128,7 @@ def write_pages(index_page, chal_pages, year):
 
 
 if __name__ == '__main__':
-    year = 2022
+    year = 2023
 
     challenge_json = parse_json(year)
     index_page = generate_index(challenge_json, year)

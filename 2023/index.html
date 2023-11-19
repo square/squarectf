@@ -1,0 +1,271 @@
+<html lang="en">
+	<head>
+		<title>Square CTF: 2023 challenges</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+		<meta name="og:title" content="Square CTF: hacking competition!">
+		<meta name="og:url" content="https://squarectf.com/">
+		<meta property="og:type" content="website">
+		<meta name="og:description" content="Compete to solve security-related challenges.">
+		<meta property="og:image" content="../og.png">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@SquareEng">
+		<meta name="twitter:title" content="Square CTF: We make security and hacking more approachable — since 2014.">
+		<meta name="twitter:description" content="Compete to solve security-related challenges.">
+		<meta name="twitter:image" content="../og.png">
+
+		<meta name="description" content="Compete to solve security-related challenges.">
+		<meta name="author" content="Square, Inc.">
+		<link rel="stylesheet" media="screen" href="../squarectf.css">
+	</head>
+	<body>
+		<div class="wideline begin">
+			<span>CHALLENGES(2023)</span>
+			<span><a href="../index.html"><img src="../sqlogo.svg"></a></span>
+			<span>CHALLENGES(2023)</span>
+		</div>
+
+		<div><img src="ctf.png" style="max-width: 100%"></div><br/>
+
+		<h1>Note</h1>
+		<p>Some challenges were hosted on our infrastructure. They are now available as
+      <a href="https://www.docker.com/">Docker</a> images which you can download and run on your own computer. If you
+      want to solve the challenges in the same way as the participants of the CTF, you should treat these Docker
+	  instances as blackboxes and avoid peeking in them.
+		<br><br>
+		All zipped challenges should include some solution or explanation.
+	</p>
+
+	<h1>Rules</h1>
+		<p><a href="rules.html">https://squarectf.com/2023/rules.html</a></p>
+
+    <h1>Challenges</h1>
+		<div class="challenges" style="line-height: 0.8em">
+			<pre><span class="text-muted">*</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="danggit!(part2).html">danggit! (part 2)</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 200</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="emojihunt2:themicrowave.html">emoji hunt 2: the microwave</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 125</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="hackerisulevel0.html">hackerisu level 0</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 200</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="welcome!.html">Welcome!</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 1</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="danggit!(part1).html">danggit! (part 1)</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="chessbros.html">Chessbros</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── misc</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="same.html">same</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── forensics</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 50</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="hackerisulevel1.html">hackerisu level 1</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── exploitation</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 250</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="tank!.html">tank!</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── exploitation</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 350</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="hackerisulevel2.html">hackerisu level 2</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── exploitation</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 350</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="tank!bonus.html">tank! bonus</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── exploitation</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="encrcroach.html">enCRCroach</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── crypto</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 250</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="pseudolottery.html">pseudo lottery</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── crypto</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 300</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="cryptoslidequest.html">Crypto Slide Quest</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── crypto</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 100</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="betheadmin.html">Be The Admin</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── web</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 75</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="justgoaround.html">Just Go Around</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── web</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 250</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="guessthepassword.html">Guess the password</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── reversing</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="halloweened.html">Halloweened</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── reversing</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 500</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="thereisabug.html">There is a bug</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── reversing</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="nauseousprocess.html">nauseous process</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── kidz-corner</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 150</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="sandbox.html">sandbox</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── kidz-corner</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 25</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="oraklpasswordchecker.html">orakl password checker</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── kidz-corner</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 100</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted">│</span>
+<span class="text-muted"><a href="roplon.html">roplon</a></span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  ├── kidz-corner</span>
+<span class="text-muted">│  │</span>
+<span class="text-muted">│  └── points: 75</span>
+
+			</pre></div>
+
+		<h1>Results</h1>
+		<p><a href="results.html">https://squarectf.com/2023/results.html</a></p>
+
+		<h1>See also</h1>
+		<p>
+			<a href="https://squ.re/2POCGUK">Work_at_Square(1)</a>,
+			<a href="https://squareup.com/legal/privacy">Privacy_policy(1)</a>,
+			<a href="https://squarectf.com/code_of_conduct.html">Code_of_conduct(1)</a>
+		</p>
+		<div class="wideline end">
+			<span>Square, Inc.</span>
+			<span>(c) <script>document.write(new Date().toLocaleString("en-us", {month: "long", year: "numeric"}));</script></span>
+			<span>CHALLENGES(2023)</span>
+		</div>
+	</body>
+</html>
