@@ -1,0 +1,240 @@
+{
+  "challenges": [
+    {
+      "name": "danggit! (part 2)",
+      "topics": [
+        "misc"
+      ],
+      "description": "<a href='/static/files/danggit2/commit.txt'>commit.txt</a><br><br>nc 184.72.87.9 8010",
+      "flag": "flag{Y0U_4RE_@_gO_pr0_HvpLQez4}",
+      "points": 200,
+      "chid": "danggit! (part 2)"
+    },
+    {
+      "name": "emoji hunt 2: the microwave",
+      "points": 125,
+      "topics": [
+        "misc"
+      ],
+      "description": ":he-brings-you-flag: isn't looking too hot :( maybe you can help the lil' guy out and figure out whats wrong with him?<br>slack wouldn't let me upload this as an emoji so you'll have to live with spamming the OG :he-brings-you-flag:<br><br><img src='/static/files/emoji-hunt-2-the-microwave/hebringsyouflag.png' alt='and he always delivers'>",
+      "files": [
+        "hebringsyouflag.png"
+      ],
+      "flag": "flag{plsstopmicrowavingtheturtles}",
+      "chid": "emoji hunt 2: the microwave"
+    },
+    {
+      "name": "hackerisu level 0",
+      "topics": [
+        "misc"
+      ],
+      "description": "baba must escape. controls: wasd. <br>game: <a href='/static/files/hackerisu0/game-distr.out'>game-distr.out</a><br> server: nc 184.72.87.9 8011",
+      "flag": "flag{b4B4_Y0ur_m0V35_4re_w34k___n0t!}",
+      "points": 200,
+      "chid": "hackerisu level 0"
+    },
+    {
+      "name": "Welcome!",
+      "topics": [
+        "misc"
+      ],
+      "description": "Welcome to Square CTF! Unless otherwise specified, our flags are all strings that follow the format of flag{<some_message>}. As an example: here's the flag for this challenge: flag{h3ll0_w0r1d!}",
+      "flag": "flag{h3ll0_w0r1d!}",
+      "points": 1,
+      "chid": "Welcome!"
+    },
+    {
+      "name": "danggit! (part 1)",
+      "topics": [
+        "misc"
+      ],
+      "description": "The developer who set up this challenge has left the company. Unfortunately, they forgot to share their code before leaving, and we have no idea how it works. All we could find was an email containing <a href='/static/files/danggit1/commit-history.txt'>their commit history</a> \u00af\\_(\u30c4)_/\u00af<br><br>nc 184.72.87.9 8009",
+      "flag": "flag{aH_PUsH_1T_gIt_pU$H_1t_0Oh_8aBY_8abY_bA8y_B@by_VpVd6jUm}",
+      "points": 150,
+      "chid": "danggit! (part 1)"
+    },
+    {
+      "name": "Chessbros",
+      "topics": [
+        "misc"
+      ],
+      "description": "I've been wanting to join this chess club for a while now, but I can't seem to figure out the secret password to get in. Can you help me? Apparently the first 40 and last 8 half-moves are all theory ;). This challenge follows the normal flag format. <br><br><a href='/static/files/chessbros/chessbros.pgn'>chessbros.pgn</a>",
+      "flag": "flag{ch3ss_1s_fun_CheSS_i5_kew1_is_th1s_fl@g_loo0ng_enuff_4_u?}",
+      "points": 150,
+      "chid": "Chessbros"
+    },
+    {
+      "name": "same",
+      "points": 50,
+      "topics": [
+        "forensics"
+      ],
+      "description": "https://youtu.be/vFyG4m-TSvY",
+      "flag": "flag{this.is.the.dumbest.challenge_e5ee7b43}",
+      "chid": "same"
+    },
+    {
+      "name": "hackerisu level 1",
+      "topics": [
+        "exploitation"
+      ],
+      "description": "baba must escape. controls: wasd. <br>game: <a href='/static/files/hackerisu1/game-distr.out'>game-distr.out</a><br> server: nc 184.72.87.9 8011",
+      "flag": "flag{th3r3_wer3_no_m000v3s}",
+      "points": 250,
+      "chid": "hackerisu level 1"
+    },
+    {
+      "name": "tank!",
+      "points": 350,
+      "topics": [
+        "exploitation"
+      ],
+      "description": "I think it's time we blow this scene.<br>Get everybody and the stuff together.<br>Okay, three, two, one, let's... figure out wtf \"const variable\" means.<br><br>BADA DADA DADA DADAAADAAAAAAA<br><br><a href='/static/files/tank-game/super-sick-tank-game'>super-sick-tank-game</a><br>nc  184.72.87.9 8004",
+      "flag": "flag{ok_maybe_the_ux_could_use_some_work_the_ui_is_slick_tho}",
+      "chid": "tank!"
+    },
+    {
+      "name": "hackerisu level 2",
+      "topics": [
+        "exploitation"
+      ],
+      "description": "baba must escape. controls: wasd. <br>game: <a href='/static/files/hackerisu2/game-distr.out'>game-distr.out</a><br> server: nc 184.72.87.9 8011",
+      "flag": "flag{b4b4_is_3verywh3re_b4b4_is_4ll}",
+      "points": 350,
+      "chid": "hackerisu level 2"
+    },
+    {
+      "name": "tank! bonus",
+      "points": 150,
+      "topics": [
+        "exploitation"
+      ],
+      "description": "alright now do it without the freebie shell function. Here's a libc:<br><br><a href='/static/files/tank-game-bonus/super-sick-tank-game-bonus'>tank-game-bonus</a><br><a href='/static/files/tank-game-bonus/libc.so.6'>libc.so.6</a> <a href='/static/files/tank-game-bonus/libm.so.6'>libm.so.6</a><br>Note: This is just Tank game but without a helpful convenience function. you can technically solve in either order but solving Tank game first will be easier.<br>nc 184.72.87.9 8003",
+      "flag": "flag{now_imagine_if_i_made_the_default_ammo_handler_the_specialty_shot}",
+      "chid": "tank! bonus"
+    },
+    {
+      "name": "enCRCroach",
+      "points": 250,
+      "topics": [
+        "crypto",
+        "web"
+      ],
+      "description": "I <a href='/static/files/encrcroach/server.py'>implemented</a> a super secure alternative to JWE and disabled the 'admin' account, but our <a href='http://184.72.87.9:8002/'>server</a> traffic logs still shows someone reading out their flag. How is that possible?!",
+      "flag": "flag{r0llin_my_0wn_crypt0_311c4f2a}",
+      "chid": "enCRCroach"
+    },
+    {
+      "name": "pseudo lottery",
+      "topics": [
+        "crypto",
+        "web"
+      ],
+      "description": "The numbers... what do they mean? Find their meaning and be rewarded greatly.<br>http://184.72.87.9:8001",
+      "flag": "flag{1TSY0UR1UCKYD4Y}",
+      "points": 300,
+      "chid": "pseudo lottery"
+    },
+    {
+      "name": "Crypto Slide Quest",
+      "topics": [
+        "crypto"
+      ],
+      "description": "I lost my secret key and the flag while writing this challenge, can you help me out? Ciphertext base64: LEs2fVVxNDMfNHEtcx80cB8nczQfJhVkDHI/Ew==  <br><br><a href='/static/files/crypto-slide-quest/crypto_slide_quest.c'>crypto_slide_quest.c</a>",
+      "flag": "flag{1ts_t1m3_t0_g3t_fUnkee}",
+      "points": 100,
+      "chid": "Crypto Slide Quest"
+    },
+    {
+      "name": "Be The Admin",
+      "topics": [
+        "web"
+      ],
+      "description": "This is a very basic website where you can view other user's profiles, but you can only see your own secret. I'll bet other users' secrets have something of interest<br>http://184.72.87.9:8012",
+      "flag": "flag{boyireallyhopenobodyfindsthis!!}",
+      "points": 75,
+      "chid": "Be The Admin"
+    },
+    {
+      "name": "Just Go Around",
+      "topics": [
+        "web"
+      ],
+      "description": "This website is a forum where people can make posts, though it's so broken right now that you can probably only search them. It turns out that someone posted something top secret and later deleted it, but was it truly deleted?<br>http://184.72.87.9:8013",
+      "flag": "flag{tHISiSapRIVATEpOSTdONTlOOK}",
+      "points": 250,
+      "chid": "Just Go Around"
+    },
+    {
+      "name": "Guess the password",
+      "topics": [
+        "reversing"
+      ],
+      "description": "Once you give it the password, it will show you the flag! <a href='/static/files/guess-the-password/Authenticator.apk'>APK</a>",
+      "flag": "flag{yeah_i_use_google_pixel_6a}",
+      "points": 150,
+      "chid": "Guess the password"
+    },
+    {
+      "name": "Halloweened",
+      "topics": [
+        "reversing"
+      ],
+      "description": "My halloween costume was Link! <a href='/static/files/halloweened/halloweened'>halloweened</a>",
+      "flag": "flag{traversing_through_the_linker_at_mach_speeeed}",
+      "points": 500,
+      "chid": "Halloweened"
+    },
+    {
+      "name": "There is a bug",
+      "topics": [
+        "reversing"
+      ],
+      "description": "Bob is reckless when developing apps. He just created an app that can show the flag with the correct password. However, he just couldn't get the flag even with the right password, could you help him to fix the bug? <a href='/static/files/there-is-a-bug/Authenticator.apk'>APK</a>",
+      "flag": "flag{i_forgot_to_make_the_call}",
+      "points": 150,
+      "chid": "There is a bug"
+    },
+    {
+      "name": "nauseous process",
+      "points": 150,
+      "topics": [
+        "kidz-corner",
+        "reversing"
+      ],
+      "description": "I've been talking to this obnoxious elf binary, he's super talkative but I think he mentioned he wanted to give you a flag or something.<br>Required reading:<br>- <a href='https://en.wikipedia.org/wiki/Executable_and_Linkable_Format#File_layout'>ELF format</a> <br>- <a href='https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html'>dynamic linking + GOT + PLT</a><br><br><a href='/static/files/nauseous/nauseous.c'>nauseous.c</a><br>nc 184.72.87.9 8005",
+      "flag": "flag{man_linux_binaries_are_gr0ss}",
+      "chid": "nauseous process"
+    },
+    {
+      "name": "sandbox",
+      "points": 25,
+      "topics": [
+        "kidz-corner"
+      ],
+      "description": "I \"made\" \"a\" \"python\" \"sandbox\" \"\"\"\"<br>nc 184.72.87.9 8008",
+      "flag": "flag{did_you_use_ifs_or_python_let_me_know_down_in_the_comments}",
+      "chid": "sandbox"
+    },
+    {
+      "name": "orakl password checker",
+      "points": 100,
+      "topics": [
+        "kidz-corner"
+      ],
+      "description": "I was reading up on password hashes for my new startup, orakl. apparently they're supposed to take a really long time?<br>Required reading:<br>- <a href='https://www.cs.virginia.edu/~evans/cs216/guides/x86.html'>intro to x86</a> + x86_64<br>- basic documentation for a disassembler of your choosing (try Ghidra, or IDA Free)<br><br><a href='/static/files/orakl-password-checker/orakl-password-checker'>orakl-password-checker</a><br>nc 184.72.87.9 8006",
+      "flag": "flag{i_wouldve_used_argon2_but_i_didnt_want_to_kill_our_infra}",
+      "chid": "orakl password checker"
+    },
+    {
+      "name": "roplon",
+      "points": 75,
+      "topics": [
+        "kidz-corner"
+      ],
+      "description": "I THINK that buffer is big enough, right?<br>Required reading:<br>- <a href='https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI'>x86_64 calling conventions</a><br>- <a href='https://en.wikipedia.org/wiki/Return-oriented_programming'>Return Oriented Programming</a><br><br><a href='/static/files/roplon/roplon'>roplon</a> <a href='/static/files/roplon/roplon.c'>roplon.c</a><br>nc 184.72.87.9 8007",
+      "flag": "flag{dont_ask_me_what_roplon_stands_for}",
+      "chid": "roplon"
+    }
+  ]
+}
