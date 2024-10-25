@@ -1,0 +1,162 @@
+<html lang="en">
+	<head>
+		<title>Block CTF: hacking competition!</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+		<meta name="og:title" content="Square CTF: hacking competition!">
+		<meta name="og:url" content="https://squarectf.com/">
+		<meta property="og:type" content="website">
+		<meta name="og:description" content="Compete to solve security-related challenges.">
+		<meta property="og:image" content="../og.png">
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@SquareEng">
+		<meta name="twitter:title" content="Square CTF: We make security and hacking more approachable — since 2014.">
+		<meta name="twitter:description" content="Compete to solve security-related challenges.">
+		<meta name="twitter:image" content="../og.png">
+
+		<meta name="description" content="Compete to solve security-related challenges.">
+		<meta name="author" content="Square, Inc.">
+		<link rel="stylesheet" media="screen" href="../squarectf.css">
+	</head>
+	<body>
+		<div class="wideline begin">
+			<span>RULES(2024)</span>
+			<span><a href="../index.html"><img src="https://storage.googleapis.com/square-console-production/assets/2380a284d3e59ed8449cdf60c66972abd30d4e1ad24968b4b9f2ad7596f6cc0d4cf5456b67f255ab3231f6f6410be02b527325b4373237e7697e84e221faeaeb.png"></a></span>
+			<span>RULES(2024)</span>
+		</div>
+
+		<h1>Name</h1>
+		<p>contest-rules - 2024 Block Capture the Flag rules.</p>
+
+		<h2>Dates</h2>
+		<p>The event starts on November 17 18:00 UTC and ends on November 18 18:00 UTC.</p>
+		<p>Puzzles will be available for future download. Points will not be awarded for solving them after the event ends.</p>
+		<p>All puzzles are solvable <b>without brute forcing</b> the solutions.</p>
+
+    <h2>Flag format</h2>
+    <p>You know you have successfully solved a puzzle if you find a string which matches the following
+      <a href="https://imgs.xkcd.com/comics/regular_expressions.png">regular expression</a>:<br/>
+			<span>/flag\{.*\}/i</span>.
+		</p>
+		<p>
+      For instance, <span class="inv">flag{27fbe50bf1ccdaf5cfc9a1}</span> would be a valid flag.
+    </p>
+
+    <h2>Timed release</h2>
+    <p>
+      Each puzzle will be released at a specific time (spread over 24 hours).
+    </p>
+    <p>
+      Puzzles are mostly independent and can be solved in any order.
+    </p>
+
+		<h2>Reference machine</h2>
+		<p>
+			All puzzles have been verified to be solvable. Most puzzles should be
+			solvable on a variety of operating system / browser / virtualization software combinations.
+		</p>
+
+    <h2>Prizes</h2>
+	<p>
+		<ul>
+		<li>First place: $1000</li>
+		<li>Second place: $500</li>
+		<li>Third place: $400</li>
+		<li>Fourth place: $300</li>
+		<li>Fifth place: $200</li>
+		<li>Sixth place: $200</li>
+		<li>Seventh place: $200</li>
+		<li>Eighth place: $200</li>
+		<li>Ninth place: $200</li>
+		<li>Tenth place: $200</li>
+		</ul>
+	</p>
+    <p>
+      The organizers will contact the winners to organize prize delivery using the email registered for the team account.
+    </p>
+    <p>
+      Only competitors who are residents of the USA are eligible for prizes this year.
+    </p>
+    <p>
+      If any of the top 3 teams are ineligible for prizes, the next eligible highest placed team will receive the prize.
+    </p>
+    <p>
+      If there is a tie, the first team to have scored their last point, based on the organizers' records, wins the
+      tie.
+    </p>
+    <p>
+      Decision of the organizers will be final and binding with regard to the prizes.
+    </p>
+
+		<h2>Teams</h2>
+		<p>
+			One-person teams are allowed, but it's more fun with friends! There is no limit on team size.
+		</p>
+
+		<h1><b>Terms of Service</b></h1><br/>
+		<h2>Email and data use</h2>
+		<p>
+			Providing an email is optional. The email is only used for account recovery purpose and as a means of contact
+			for prize coordination.
+		</p>
+		<p>
+			All data related to the event will be deleted shortly after the event ends. Your email will not be associated with
+			any other Block services.
+		</p>
+
+		<h2>Cookie and tracking</h2>
+		<p>*.squarectf.com does not use any tracking technology. Cookies may be used for the purpose of authentication and
+			content delivery (CloudFlare CDN) purpose.</p>
+
+		<h1>ctftime.org</h1>
+		<p>Your team name and score will be made available in a public fashion and shared with <a href="https://ctftime.org/">ctftime.org</a>.
+			Points scored in this event should count towards your global CTF Time leaderboard.</p>
+
+		<h1>Bugcrowd</h1>
+		<p>This website (and anything hosted under *.squarectf.com) is not included in Square's
+			Bugcrowd <a href="https://bugcrowd.com/square">bug bounty programs</a>.
+			Please visit the official Bugcrowd site for additional information about Block's bug
+			bounty programs.
+		</p>
+
+		<h1>CTF Scope</h1>
+		<p>
+			The challenges posted on this site may be hacked using any tools desired. However,
+			hacking of any Block infrastructure, which is separate infrastructure from this site,
+			falls under the terms of Block's Bugcrowd <a href="https://bugcrowd.com/square">bug bounty program</a>. In
+			addition, Discord has their own <a href="https://slack.com/terms-of-service/user">terms of service</a> for
+			appropriate use. When in doubt, contact a CTF organizer to determine whether a site or server is within the CTF
+			scope.
+		</p>
+		<p>
+			The CTF is running on infrastructure hosted by other companies. Please be kind and
+			limit traffic to a reasonable level. <b>All puzzles are solvable without brute forcing
+			the solutions</b>.
+		</p>
+
+		<h1>Code of Conduct</h1>
+		<p>
+			By participating in this Contest you agree to abide by the <a href="../code_of_conduct.html">Block CTF Code of
+				Conduct</a>. Unacceptable behavior by participants will not be tolerated. Anyone asked to stop unacceptable
+			behavior is expected to comply immediately. If a participant engages in unacceptable behavior, the Block CTF
+			organizers may take any action they deem appropriate at their sole discretion, up to and including expulsion from
+			the Competition and expulsion from the Block CTF Discord.
+		</p>
+
+		<h1>See also</h1>
+		<p>
+			<a href="https://block.xyz/careers">Work_at_Block(1)</a>,
+			<a href="https://squareup.com/legal/privacy">Privacy_policy(1)</a>,
+			<a href="../code_of_conduct.html">Code_of_conduct(1)</a>
+		</p>
+		<div class="wideline end">
+			<span>Block, Inc.</span>
+			<span>(c) <script>document.write(new Date().toLocaleString("en-us", {month: "long", year: "numeric"}));</script></span>
+			<span>RULES(2024)</span>
+		</div>
+	</body>
+</html>

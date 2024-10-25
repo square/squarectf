@@ -63,6 +63,8 @@ li:before {
 		padding-right: 4ch;
 }
 
+li:before {content: ''}
+
 li {
 		display: block;
 		padding-left: 12ch;
