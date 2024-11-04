@@ -128,7 +128,7 @@ def write_pages(index_page, chal_pages, year):
 
 
 if __name__ == '__main__':
-    year = 2023
+    year = 2024
 
     challenge_json = parse_json(year)
     index_page = generate_index(challenge_json, year)
