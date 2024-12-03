@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Block CTF</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/files/aa7d6d3b1d4f99fa6bf30ea79d6b2d51/62c3d1403929a07cdbb8f3adca8a048e.png" type="image/x-icon">
+
+  
+
+  
+    <link rel="stylesheet" href="/themes/core-beta/static/assets/main.0c7144ba.css">
+  
+
+  
+
+  <script  src="/themes/core-beta/static/assets/color_mode_switcher.52334129.js"></script>
+
+  <script type="text/javascript">
+      window.init = {
+          'urlRoot': "",
+          'csrfNonce': "2e5c0d256d788bd1f7038bca5805a47c5802c52e3d788c38753ecc02f9837b6f",
+          'userMode': "teams",
+          'userId': 0,
+          'userName': null,
+          'userEmail': null,
+          'teamId': null,
+          'teamName': null,
+          'start': 1731535200,
+          'end': 1731621600,
+          'themeSettings': null,
+          'eventSounds': [
+            "/themes/core/static/sounds/notification.webm",
+            "/themes/core/static/sounds/notification.mp3",
+          ],
+      }
+  </script>
+
+  <style id="theme-color">
+  :root {
+    --theme-color: linear-gradient(to right,
+    #13BBAF 0%,
+    #FF4F00 33%,
+    #F8BE2C 66%,
+    #ECA3FC 100%);
+
+    --footer-color: linear-gradient(to right,
+    #D40000 0%,
+    #8400D1 33%,
+    #D73500 66%,
+    #087D76 100%);
+
+    --black: #000000;
+    --btn: linear-gradient(to bottom right, #FF4F00, #13BBAF);
+  }
+
+  @font-face {
+    font-family: 'PilatWide';
+    src: url('https://cdn.block.xyz/fonts/pilatwide/PilatWide-Bold.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PPNeueMachina';
+    src: url('https://cdn.block.xyz/fonts/ppneuemachina/PPNeueMachina-Regular.woff2') format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  main { padding-top: 84px; }
+  html, body, .container { font-family: "PPNeueMachina" !important; }
+  [data-bs-theme="dark"] body, [data-bs-theme="dark"] .jumbotron { background: black !important; color: white}
+  [data-bs-theme="light"] body, [data-bs-theme="light"] .jumbotron { background: white !important; color: black}
+  .navbar { background: var(--theme-color) !important; min-height: 60px; }
+  .footer { background: --black !important; }
+
+  .navbar-nav .nav-link {
+    font-family: "PilatWide" !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    line-height: 180%;
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav .nav-item::after {
+    transition: background .2s ease-out;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 86%;
+    margin-left: -42%;
+    margin-bottom: 6px;
+    height: 1px;
+    background: black;
+    content: "";
+  }
+
+  li.nav-item { position: relative; }
+
+  li.nav-item:hover a {
+    color: white;
+  }
+  li.nav-item:hover::after { background: white !important; }
+
+  [data-bs-theme="dark"] button, [data-bs-theme="dark"] .btn, [data-bs-theme="dark"] .btn-primary { border: none !important; }
+
+  [data-bs-theme="light"] .btn, [data-bs-theme="light"] .btn-primary { border: 2px solid #0000CD !important; }
+
+  button.btn-success, button.btn-primary {
+    background: linear-gradient(to top right, #8EF3FF, #ECA3FC) !important;
+    --bs-btn-bg: linear-gradient(to bottom right, #0000CD, #730D00);
+  }
+
+  .btn, .btn-primary {
+    border-radius: 100px;
+    padding: 8px;
+    background: white;
+    color: black;
+  }
+
+  .btn:hover, .btn-primary:hover {
+    background: linear-gradient(to top right, #D40000, #0000CD) !important;
+  }
+
+  button.navbar-toggler {
+  	background: transparent !important;
+    border: 1px solid white !important;
+  }
+
+  button.btn.challenge-button {
+    background: white;
+  }
+  
+  [data-bs-theme="light"] [x-data="CaptainMenu"] i::before {
+    padding: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #D40000, #0000CD);
+  }
+  
+  a { color: #0EB0D2 }
+  a:hover { color: #5AEBDC }
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      
+        <img
+            class="img-responsive ctf_logo"
+            src="/files/06dfba2e5626278e079f5d1ea29616c4/62c3d1403929a07cdbb8f3adca8a048e.png"
+            alt="Block CTF"
+            height="25"
+        >
+      
+    </a>
+
+    <button
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-navbars"
+        aria-controls="base-navbars" aria-expanded="false" aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="base-navbars">
+      <ul class="navbar-nav me-auto">
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/users">
+              Users
+            </a>
+          </li>
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/teams">
+                Teams
+              </a>
+            </li>
+          
+        
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="/scoreboard">
+              Scoreboard
+            </a>
+          </li>
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/challenges">
+            Challenges
+          </a>
+        </li>
+      </ul>
+
+      <hr class="d-sm-flex d-md-flex d-lg-none">
+
+      <ul class="navbar-nav ms-md-auto d-block d-sm-flex d-md-flex">
+        
+
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/register">
+                <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Register">
+                  <i class="fas fa-user-plus d-none d-md-inline d-lg-none"></i>
+                </span>
+                <span class="d-sm-inline d-md-none d-lg-inline">
+                  <i class="fas fa-user-plus pe-1"></i>
+                  Register
+                </span>
+              </a>
+            </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="/login">
+              <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Login">
+                <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
+              </span>
+              <span class="d-sm-inline d-md-none d-lg-inline">
+                <i class="fas fa-sign-in-alt pe-1"></i>
+                Login
+              </span>
+            </a>
+          </li>
+        
+        <li class="nav-item">
+          <button class="nav-link theme-switch" type="button">
+            <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle theme">
+              <i class="fas fa-sun d-none d-md-inline"></i>
+            </span>
+            <span class="d-sm-inline d-md-none">
+              <i class="fas fa-sun pe-1"></i>
+              Toggle theme
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main role="main">
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h1>
+        Scoreboard
+      </h1>
+    </div>
+  </div>
+  <div class="container">
+    <div>
+  
+
+  
+</div>
+
+    <div id="score-graph" class="align-items-center" :class="{'d-flex': show, 'd-none': !show}" x-data="ScoreboardDetail" x-ref="scoregraph" @bracket-change.window="activeBracket=$event.detail; update();">
+      <div class="col-md-12 text-center">
+        <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+      </div>
+    </div>
+
+    <div id="scoreboard" class="row" x-data="ScoreboardList">
+      <template x-if="brackets.length && standings.length">
+        <div class="col-md-12 py-3">
+          <nav class="nav nav-pills nav-fill">
+            <button :class="{'nav-link': true, 'active': !activeBracket}" @click="activeBracket=null">All</button>
+            <template x-for="bracket in brackets">
+              <button :class="{'nav-link': true, 'active': activeBracket == bracket.id}" x-text="bracket.name" @click="activeBracket=bracket.id"></button>
+            </template>
+          </nav>
+        </div>
+      </template>
+
+      <div class="col-md-12" x-show="standings.length">
+        <table class="table table-striped align-middle">
+          <thead>
+          <tr>
+            <th style="width: 10px">Place</th>
+            <th class="text-start ps-3">Team</th>
+            <th>Score</th>
+          </tr>
+          </thead>
+
+          <tbody>
+            <template x-for="(standing, index) in standings.filter(i => activeBracket ? i.bracket_id==activeBracket : true)">
+              <tr>
+                <th scope="row" class="text-center" x-text="index + 1"></th>
+                <td class="text-start">
+                  <a :href="standing.account_url" x-text="standing.name"></a>
+                  <template x-if="standing.bracket_name">
+                    <span class="badge bg-secondary ms-2" x-text="standing.bracket_name"></span>
+                  </template>
+                </td>
+                <td x-text="standing.score"></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-12" x-show="! standings.length">
+        <h3 class="text-center text-muted">Scoreboard is empty</h3>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <a href="https://ctfd.io" class="text-secondary">
+      <small class="text-muted">
+        Powered by CTFd
+      </small>
+    </a>
+  </div>
+</footer>
+
+<div x-data>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div x-ref="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto" x-text="$store.toast.title"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" x-html="$store.toast.html">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div x-data>
+  <div class="modal fade" x-ref="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" x-text="$store.modal.title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p x-html="$store.modal.html"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script type="module"  src="/themes/core-beta/static/assets/index.2e31e3b8.js"></script><script type="module"  src="/themes/core-beta/static/assets/index.1cf73b05.js"></script><script type="module"  src="/themes/core-beta/static/assets/echarts.128204f2.js"></script><script type="module"  src="/themes/core-beta/static/assets/scoreboard.b1c04d97.js"></script>
+
+
+
+
+
+</body>
+</html>
