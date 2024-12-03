@@ -1,1 +1,164 @@
-{"challenges": []}
+{
+  "challenges": [
+    {
+      "name": "Welcome!",
+      "topics": ["misc"],
+      "description": "Welcome to Block CTF! Our flags will be of format flag{....}. For example, here's the flag for this challenge:\n\nflag{h0w_m4ny_bl0ckh3ads_d1d_1t_t4k3_t0_run_th1s?}",
+      "points": 1,
+      "chid": "Welcome!",
+      "flag": "flag{h0w_m4ny_bl0ckh3ads_d1d_1t_t4k3_t0_run_th1s?}"
+    },
+    {
+      "name": "Glitch in the Crypt: Exploiting Faulty RSA Decryption",
+      "topics": ["crypto"],
+      "description": "A high-security server, **SecureVault Inc.**, uses RSA encryption to protect sensitive data. The server utilizes a **1024-bit RSA key** and employs the **CRT optimization** during decryption to improve performance.\n\nDue to a hardware fault, the server occasionally introduces errors during the decryption process. Specifically, the fault affects the computation of m_p = c^{d_p} mod p during the CRT step, causing  m_p to be incorrect, while m_q = c^{d_q} mod q remains correct.\n\nAs an experienced cryptanalyst, you have managed to obtain access to the server's decryption service. Your goal is to exploit the faulty decryption results to recover the prime factors  p and q of the RSA modulus n, effectively breaking the encryption scheme and recovering the private key.\n\nnc 54.85.45.101 8010",
+      "points": 200,
+      "chid": "Glitch in the Crypt: Exploiting Faulty RSA Decryption",
+      "flag": "flag{cr4ck1ng_RS4_w1th_f4ul7s}"
+    },
+    {
+      "name": "I Have No Syscalls And I Must Scream",
+      "topics": ["pwn"],
+      "description": "write(1, \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH\", 64);\n\nnote: solving this does not require tens of thousands of repeat connections, and trying to do so will probably kill our infrastructure before you get your flag. Please don't attack the Infrastructure!\n\nnc 54.85.45.101 8002",
+      "points": 300,
+      "chid": "I Have No Syscalls And I Must Scream",
+      "flag": "flag{the_moral_of_the_story_is_dont_be_mean_to_chatgpt}"
+    },
+    {
+      "name": "Only Ws",
+      "topics": ["pwn"],
+      "description": "The flag is write there. All you have to do is get it.\n\nnc 54.85.45.101 8005",
+      "points": 50,
+      "chid": "Only Ws",
+      "flag": "flag{kinda_like_orw_but_only_ws}"
+    },
+    {
+      "name": "Flower App",
+      "topics": ["reversing"],
+      "description": "I swiftly drew some flowers!",
+      "points": 200,
+      "chid": "Flower App",
+      "flag": "flag{congrats_on_swiftly_decoding_this}"
+    },
+    {
+      "name": "An Elf on a Shelf",
+      "topics": ["reversing"],
+      "description": "What's going on here?",
+      "points": 250,
+      "chid": "An Elf on a Shelf",
+      "flag": "flag{magick_mirr0r__m4gick_elf}"
+    },
+    {
+      "name": "Nothin But Stringz",
+      "topics": ["reversing"],
+      "description": "Someone sent me this as a test of friendship, but I can't make heads or tails out of it. Can you help?",
+      "points": 25,
+      "chid": "Nothin But Stringz",
+      "flag": "flag{al1_th3_h0miez_l0v3_llvm_643e5f4a}"
+    },
+    {
+      "name": "Sizer Cipher",
+      "topics": ["crypto"],
+      "description": "I made my own encryption scheme- check it out! \n\n`052c01be88c7f52cbdc3c084c7b1313828034370034dd13778342dff`\n\nnc 54.85.45.101 8003",
+      "points": 100,
+      "chid": "Sizer Cipher",
+      "flag": "flag{ImF1ll3dWithSte4kandCann0tD4nc3}"
+    },
+    {
+      "name": "Where's My Key?",
+      "topics": ["crypto"],
+      "description": "The flag server is providing encrypted flags. It looks like there might be a bug in the code and I can't figure out how to decrypt it.\n\nnc 54.85.45.101 8001",
+      "points": 150,
+      "chid": "Where's My Key?",
+      "flag": "flag{0000_wh0_knew_pub_keys_c0uld_be_bad_0000}"
+    },
+    {
+      "name": "go-moth",
+      "topics": ["web"],
+      "description": "http://54.85.45.101:8004/",
+      "points": 250,
+      "chid": "go-moth",
+      "flag": "flag{85d680bbb5103431d31d9413e29c7f6f}"
+    },
+    {
+      "name": "Juggl3r",
+      "topics": ["web"],
+      "description": "The admin panel seems locked behind some odd logic, and the flag is hidden deep. Can you bypass the checks and uncover the secret?\n\nhttp://54.85.45.101:8080/",
+      "points": 200,
+      "chid": "Juggl3r",
+      "flag": "flag{juggl3_inject}"
+    },
+    {
+      "name": "Protect your API Key",
+      "topics": ["reversing"],
+      "description": "Bob is creating an app in which he needs to include a particular SDK. To use the SDK, he applied for an API Key which needs to pass to the SDK in the runtime. Considering the Key is not free, Bob is trying multiple approaches to protect it.",
+      "points": 400,
+      "chid": "Protect your API Key",
+      "flag": "flag{3fh9.gkf29j.7}"
+    },
+    {
+      "name": "2048 hacker 0",
+      "topics": ["pwn"],
+      "description": "The game is rigged against you.\n\nnc 54.85.45.101 8007",
+      "points": 150,
+      "chid": "2048 hacker 0",
+      "flag": "flag{u_r_b3st_numb3r_0ne_f4st3st_2048_champi0n_0f_all_tim3}"
+    },
+    {
+      "name": "WannaLaugh",
+      "topics": ["reversing"],
+      "description": "Grandpa downloaded a weird program on the Internet and now his files don't work. Knowing you're good with computers, he asked for your help.\n\nThe program is asking for Bitcoin to get his files back, but his wallet password was encrypted as well.\n\nNote: \nThe program will only encrypt .txt files in the same directory as the executable and won't delete any files so nothing bad should happen...",
+      "points": 200,
+      "chid": "WannaLaugh",
+      "flag": "flag{D0nT_cRy_n0-M0re}"
+    },
+    {
+      "name": "2048 hacker 1",
+      "topics": ["pwn"],
+      "description": "If you solved 2048 hacker 0 you know the game is actually rigged in your favor. Go get a shell!\n\nnc 54.85.45.101 8007",
+      "points": 350,
+      "chid": "2048 hacker 1",
+      "flag": "flag{s00p3r_d00p3r_h4cker_sup3ri0rity}"
+    },
+    {
+      "name": "2048 ai",
+      "topics": ["misc"],
+      "description": "Can you speedrun 2048?\n\nnc 54.85.45.101 8006",
+      "points": 150,
+      "chid": "2048 ai",
+      "flag": "flag{f4st3r_th4n_hum4nly_p0ssibl3}"
+    },
+    {
+      "name": "echo",
+      "topics": ["pwn"],
+      "description": "This simple server echos back what it hears. Can you make it say so̸met̸hing ḍ̣͂̅i̮̓f̆f̛ḙ̊rḙ̊nt̮̏?\n\nnc 54.85.45.101 8008",
+      "points": 25,
+      "chid": "echo",
+      "flag": "flag{curs3d_are_y0ur_eyes_for_they_see_the_fl4g}"
+    },
+    {
+      "name": "Red Flags",
+      "topics": ["reversing"],
+      "description": "I made a video game, its really hard!",
+      "points": 150,
+      "chid": "Red Flags",
+      "flag": "flag{now_wishlist_me_on_steam}"
+    },
+    {
+      "name": "echo2",
+      "topics": ["pwn"],
+      "description": "I fixed my echo server by enabling lots of protections. Now what can you do?\n\nnc 54.85.45.101 8009",
+      "points": 125,
+      "chid": "echo2",
+      "flag": "flag{aslr_and_canari3s_are_n0_match_f0r_l3aky_stacks}"
+    },
+    {
+      "name": "Custom Keyboard",
+      "topics": ["reversing"],
+      "description": "I got a sweet deal on this keyboard at a garage sale, but I think whoever used it before me messed with the settings. It came with an instruction manual that just says: `KKPE{FJZBSVNBYWWOKOJIPNWGPGASCVVYPAYLAHTX}`\n\n**NOTE**: The flag will be in ALL CAPS, like `FLAG{...}`\n\n**NOTE**: The flag was typed continuously 🎹",
+      "points": 400,
+      "chid": "Custom Keyboard",
+      "flag": "FLAG{DIETASTATURISTMACHTIGERALSDASSCHWERT}"
+    }
+  ]
+}
